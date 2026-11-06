@@ -1,0 +1,26 @@
+services:
+  backend:
+    build: .
+    container_name: qr-cafe-backend
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env
+    volumes:
+      - uploads:/app/uploads   # giữ ảnh món khi tạo lại container
+    restart: unless-stopped
+
+  # Tùy chọn: MongoDB cục bộ khi không muốn dùng Atlas.
+  # Chạy: docker compose --profile local-db up   (đặt MONGODB_URI=mongodb://mongo:27017/qr_cafe)
+  mongo:
+    image: mongo:7
+    profiles: ["local-db"]
+    container_name: qr-cafe-mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  uploads:
+  mongo-data:
