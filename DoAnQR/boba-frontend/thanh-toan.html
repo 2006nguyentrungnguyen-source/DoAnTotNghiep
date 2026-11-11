@@ -1,0 +1,670 @@
+<!DOCTYPE html><html lang="vi"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-dim":"#f0d5c5","on-secondary-fixed-variant":"#5b403c","surface-container-low":"#fff1ea","inverse-primary":"#fab893","inverse-on-surface":"#ffede4","outline-variant":"#d6c3b9","inverse-surface":"#3d2d22","surface-container-high":"#ffe3d2","secondary-fixed-dim":"#e3beb8","primary-fixed-dim":"#fab893","surface-container-highest":"#f9ddcd","on-tertiary-fixed":"#271900","on-secondary-container":"#795c57","outline":"#84746c","surface-tint":"#855234","tertiary-fixed-dim":"#f5bd58","tertiary-fixed":"#ffdeaa","surface":"#fff8f5","on-surface-variant":"#52443d","on-error":"#ffffff","on-primary":"#ffffff","on-primary-container":"#ffbd99","error":"#ba1a1a","primary":"#5f3318","surface-bright":"#fff8f5","on-background":"#27180f","secondary":"#745853","surface-variant":"#f9ddcd","on-primary-fixed-variant":"#693b1f","on-secondary":"#ffffff","background":"#fff8f5","tertiary":"#553a00","primary-container":"#7b4a2d","surface-container-lowest":"#ffffff","surface-container":"#ffeade","tertiary-container":"#735000","on-primary-fixed":"#331200","on-error-container":"#93000a","on-secondary-fixed":"#2b1613","on-tertiary-fixed-variant":"#5f4100","secondary-container":"#fed7d0","error-container":"#ffdad6","secondary-fixed":"#ffdad4","on-tertiary":"#ffffff","on-surface":"#27180f","primary-fixed":"#ffdbc9","on-tertiary-container":"#fcc35d"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter":"0.75rem","space-sm":"0.5rem","space-xl":"1.5rem","space-xs":"0.25rem","space-md":"0.75rem","space-lg":"1rem","margin":"1rem"},"fontFamily":{"headline-lg":["Be Vietnam Pro"],"title-md":["Be Vietnam Pro"],"headline-md":["Be Vietnam Pro"],"body-md":["Be Vietnam Pro"],"title-sm":["Be Vietnam Pro"],"label-sm":["Be Vietnam Pro"],"label-lg":["Be Vietnam Pro"],"body-sm":["Be Vietnam Pro"],"body-lg":["Be Vietnam Pro"],"headline-sm":["Be Vietnam Pro"],"label-md":["Be Vietnam Pro"]},"fontSize":{"headline-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}],"title-md":["16px",{"lineHeight":"22px","fontWeight":"600"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"21px","fontWeight":"400"}],"title-sm":["14px",{"lineHeight":"20px","fontWeight":"600"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"17px","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"26px","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-inverse-surface z-50 flex flex-col justify-between shadow-[0_4px_24px_rgba(62,39,35,0.25)]"><div class="flex flex-col"><div class="h-20 px-space-xl flex items-center gap-space-md"><div class="w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center text-primary-fixed"><span class="material-symbols-outlined text-[24px]">local_cafe</span></div><div class="flex flex-col"><span class="font-title-sm text-title-sm text-surface tracking-tight">Tiệm Trà An Yên</span><span class="font-label-sm text-label-sm text-outline-variant uppercase tracking-wider">Cổng Quản Trị POS</span></div></div><div class="px-space-md py-space-sm"><div class="bg-on-background/30 rounded-xl px-space-md py-space-sm flex items-center justify-between mb-space-sm"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-tertiary-fixed text-[18px]">storefront</span><span class="font-label-md text-label-md text-surface">Chi nhánh Thảo Điền</span></div><span class="w-2 h-2 rounded-full bg-tertiary-fixed"></span></div></div><nav class="px-space-md flex flex-col gap-space-xs mt-space-xs" data-active-classes="bg-primary-container text-surface font-title-sm shadow-[0_2px_8px_rgba(43,27,20,0.4)]"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-outline-variant hover:bg-on-background/20 hover:text-surface transition-all" data-path="don-hang" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span class="font-title-sm text-title-sm">Đơn hàng</span></a>
+<a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-outline-variant hover:bg-on-background/20 hover:text-surface transition-all" data-path="goi-mon-tai-quay" href="#"><span class="material-symbols-outlined text-[20px]">point_of_sale</span><span class="font-title-sm text-title-sm">Gọi món tại quầy</span></a>
+<a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl bg-primary-container text-surface font-title-sm shadow-[0_2px_8px_rgba(43,27,20,0.4)] transition-all" data-path="thanh-toan" href="#"><span class="material-symbols-outlined text-[20px]">payments</span><span class="font-title-sm text-title-sm">Thanh toán</span></a>
+<a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-outline-variant hover:bg-on-background/20 hover:text-surface transition-all" data-path="het-mon" href="#"><span class="material-symbols-outlined text-[20px]">remove_shopping_cart</span><span class="font-title-sm text-title-sm">Hết món</span></a>
+<a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-outline-variant hover:bg-on-background/20 hover:text-surface transition-all" data-path="ban" href="#"><span class="material-symbols-outlined text-[20px]">table_restaurant</span><span class="font-title-sm text-title-sm">Bàn</span></a>
+<a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-outline-variant hover:bg-on-background/20 hover:text-surface transition-all" data-path="chot-ca" href="#"><span class="material-symbols-outlined text-[20px]">lock_clock</span><span class="font-title-sm text-title-sm">Chốt ca</span></a>
+<a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-outline-variant hover:bg-on-background/20 hover:text-surface transition-all" data-path="lich-su" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span class="font-title-sm text-title-sm">Lịch sử</span></a></nav></div><div class="p-space-md m-space-md rounded-xl bg-on-background/20"><div class="flex items-center gap-space-md"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col min-w-0 flex-1"><span class="font-label-lg text-label-lg text-surface truncate">Nguyễn An Yên</span><span class="font-label-sm text-label-sm text-outline-variant truncate">Thu ngân • Ca sáng</span></div><button class="text-outline-variant hover:text-surface transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">logout</span></button></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(62,39,35,0.06)] z-40 px-space-xl flex items-center justify-between"><div class="flex items-center gap-space-md"><nav class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant"><span class="material-symbols-outlined text-[16px]">home</span><span class="">/</span><span class="text-on-surface font-title-sm text-title-sm">Cửa hàng Thảo Điền</span><span class="">/</span><span class="text-primary font-title-sm text-title-sm">Bảng điều khiển</span></nav></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-space-xs rounded-xl"><span class="material-symbols-outlined text-on-surface-variant text-[18px]">schedule</span><span class="font-label-md text-label-md text-on-surface font-semibold">08/11/2026 • 10:24</span></div><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[18px]">search</span><input class="bg-surface-container-low text-on-surface font-body-sm text-body-sm pl-9 pr-space-md py-2 rounded-xl focus:outline-none w-64 placeholder:text-outline-variant" placeholder="Tìm kiếm đơn, bàn, món..." type="text"></div><button class="relative p-2 rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-sm pl-space-sm"><div class="text-right"><p class="font-label-md text-label-md text-on-surface font-semibold">Ca trực #01</p><p class="font-label-sm text-label-sm text-on-surface-variant">Thu ngân: An Yên</p></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-20 bg-surface min-h-screen px-space-xl py-space-xl"><div class="flex flex-col w-full">
+<!-- Interactive View Switcher (Demo / Prototype Control Bar) -->
+<div class="mb-space-lg flex flex-wrap items-center justify-between gap-space-md p-space-md rounded-xl bg-surface-container shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</div>
+<div>
+<p class="font-title-sm text-title-sm text-on-surface">Mô phỏng trải nghiệm POS</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Chuyển đổi trạng thái danh sách thu ngân</p>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs p-1 bg-surface-container-low rounded-xl" id="view-tabs">
+<button class="px-space-md py-1.5 rounded-lg font-label-md text-label-md bg-primary-container text-on-primary shadow-sm transition-all flex items-center gap-1" id="tab-default" onclick="switchState('default')" type="button">
+<span class="material-symbols-outlined text-[16px]">receipt_long</span>
+<span class="">1. Chờ thanh toán (6 bàn)</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-1" id="tab-empty" onclick="switchState('empty')" type="button">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span class="">2. Trống (Đã xong hết)</span>
+</button>
+<button class="px-space-md py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-1" id="tab-filtered" onclick="switchState('filtered')" type="button">
+<span class="material-symbols-outlined text-[16px]">search</span>
+<span class="">3. Tìm kiếm "Bàn 5"</span>
+</button>
+</div>
+</div>
+<!-- Header Banner & Real-time Metrics -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-xl mb-space-xl shadow-sm">
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<div class="flex flex-wrap items-center gap-space-md">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Thu ngân &amp; Thanh toán</h1>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+            6 bàn đang chờ thu · Tổng: 1.155.000đ
+          </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Quản lý hóa đơn tập trung, gom lượt gọi món và xử lý thanh toán tức thời tại quầy.</p>
+</div>
+<!-- Live Shift Stats Card -->
+<div class="flex items-center gap-space-lg bg-surface-container-lowest/80 backdrop-blur-md px-space-xl py-space-md rounded-xl shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-11 h-11 rounded-xl bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed shadow-sm">
+<span class="material-symbols-outlined text-[22px]">cloud_download</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Thời gian ca trực</p>
+<p class="font-title-md text-title-md text-on-surface font-semibold" id="pos-live-clock">11:48:18</p>
+</div>
+</div>
+<div class="w-px h-8 bg-surface-variant"></div>
+<div>
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Tốc độ phục vụ TB</p>
+<p class="font-title-md text-title-md text-primary font-bold">3.2 phút/bàn</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Search & Fast Filter Command Bar -->
+<div class="flex flex-col gap-space-md mb-space-xl">
+<div class="relative w-full">
+<div class="absolute inset-y-0 left-0 pl-space-lg flex items-center pointer-events-none text-primary">
+<span class="material-symbols-outlined text-[26px]">manage_search</span>
+</div>
+<input class="w-full pl-14 pr-32 py-4 bg-surface-container-lowest text-on-surface font-headline-sm text-headline-sm rounded-xl shadow-sm placeholder:text-outline/70 focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" id="pos-search-input" oninput="handleSearch(this.value)" placeholder="Nhập số bàn (vd: Bàn 5, 05) hoặc mã đơn (#A0127) để thanh toán siêu tốc..." type="text">
+<div class="absolute inset-y-0 right-3 flex items-center gap-space-xs">
+<span class="hidden sm:inline-flex items-center px-2 py-1 bg-surface-container rounded-lg font-label-sm text-label-sm text-on-surface-variant">
+          ESC để xóa
+        </span>
+<button class="p-2 text-on-surface-variant hover:text-on-surface rounded-lg hover:bg-surface-container transition-colors" onclick="clearSearch()" type="button">
+<span class="material-symbols-outlined text-[20px]">backspace</span>
+</button>
+</div>
+</div>
+<!-- Quick Chips & Ordering Selector -->
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface-variant mr-1">Lọc nhanh:</span>
+<button class="chip-filter active px-space-md py-1.5 rounded-full font-label-md text-label-md bg-primary-container text-on-primary shadow-sm transition-all" onclick="filterByChip('all')" type="button">
+          Tất cả (6)
+        </button>
+<button class="chip-filter px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface hover:bg-surface-container transition-all" onclick="filterByChip('01')" type="button">
+          Bàn 01
+        </button>
+<button class="chip-filter px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface hover:bg-surface-container transition-all" onclick="filterByChip('02')" type="button">
+          Bàn 02 <span class="ml-1 px-1.5 py-0.2 rounded-full bg-error-container text-on-error-container text-[10px]">Lâu</span>
+</button>
+<button class="chip-filter px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface hover:bg-surface-container transition-all" onclick="filterByChip('05')" type="button">
+          Bàn 05 <span class="ml-1 px-1.5 py-0.2 rounded-full bg-primary-fixed text-on-primary-fixed text-[10px]">2 đơn</span>
+</button>
+<button class="chip-filter px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface hover:bg-surface-container transition-all" onclick="filterByChip('takeaway')" type="button">
+          Mang về
+        </button>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface-variant">Sắp xếp:</span>
+<button class="px-space-md py-1.5 rounded-xl bg-surface-container font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1 shadow-sm" id="sort-time" onclick="setSortMode('time')" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">hourglass_top</span>
+          Ưu tiên chờ lâu nhất
+        </button>
+<button class="px-space-md py-1.5 rounded-xl bg-surface-container-low font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-1" id="sort-amount" onclick="setSortMode('amount')" type="button">
+<span class="material-symbols-outlined text-[16px]">payments</span>
+          Số tiền nhiều nhất
+        </button>
+</div>
+</div>
+</div>
+<!-- STATE CONTAINER: DEFAULT & FILTERED (GRID OF TABLE CARDS) -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-space-lg mb-space-xl" id="table-cards-container">
+<!-- CARD 1: BÀN 05 (GỘP ĐƠN) -->
+<div class="table-card relative flex flex-col justify-between rounded-xl bg-surface-container-lowest p-space-lg shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-0.5" data-amount="160000" data-table="05" data-time="4">
+<div>
+<!-- Table Top Header -->
+<div class="flex items-start justify-between gap-space-sm mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary font-headline-sm text-headline-sm">
+              05
+            </div>
+<div>
+<div class="flex items-center gap-space-xs">
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Bàn 05</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(Tầng 1)</span>
+</div>
+<p class="font-label-sm text-label-sm text-outline">Khu vực cửa sổ phố</p>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">call_merge</span>
+            Khách gọi thêm gộp bàn
+          </span>
+</div>
+<!-- Orders Breakdown in Table -->
+<div class="flex flex-col gap-space-sm mb-space-md">
+<!-- Batch 1 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low">
+<div class="flex items-center justify-between text-on-surface-variant mb-1">
+<span class="font-label-md text-label-md font-bold text-primary">Đơn #A0127 · Đợt 1</span>
+<span class="font-label-sm text-label-sm text-outline flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">schedule</span> Chờ 4 phút
+              </span>
+</div>
+<div class="flex items-center justify-between text-on-surface">
+<p class="font-body-sm text-body-sm truncate pr-2 text-on-surface-variant">3 món: Trà sữa trân châu, Ô Long nướng, Croissant</p>
+<span class="font-title-sm text-title-sm font-semibold whitespace-nowrap">125.000đ</span>
+</div>
+</div>
+<!-- Batch 2 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low">
+<div class="flex items-center justify-between text-on-surface-variant mb-1">
+<span class="font-label-md text-label-md font-bold text-primary">Đơn #A0131 · Đợt 2 (Gọi thêm)</span>
+<span class="font-label-sm text-label-sm text-outline flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">schedule</span> Chờ 1 phút
+              </span>
+</div>
+<div class="flex items-center justify-between text-on-surface">
+<p class="font-body-sm text-body-sm truncate pr-2 text-on-surface-variant">1 món: Bánh su kem phô mai</p>
+<span class="font-title-sm text-title-sm font-semibold whitespace-nowrap">35.000đ</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card Footer Actions -->
+<div class="pt-space-sm">
+<div class="flex items-baseline justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-on-surface-variant">Tổng cộng (4 món):</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">160.000đ</span>
+</div>
+<div class="grid grid-cols-3 gap-space-xs">
+<button class="col-span-1 h-12 rounded-xl bg-surface-container text-on-surface hover:bg-surface-variant font-label-md text-label-md transition-all flex items-center justify-center gap-1" onclick="splitOrder('Bàn 05')" type="button">
+<span class="material-symbols-outlined text-[16px]">call_split</span>
+            Tách đơn
+          </button>
+<button class="col-span-2 h-12 rounded-xl bg-primary-container text-on-primary hover:opacity-95 font-title-sm text-title-sm shadow-sm transition-all flex items-center justify-center gap-1.5" onclick="processPayment('Bàn 05', '160.000đ')" type="button">
+<span class="material-symbols-outlined text-[18px]">credit_card</span>
+            Thanh toán ngay (160.000đ)
+          </button>
+</div>
+</div>
+</div>
+<!-- CARD 2: BÀN 02 (CẢNH BÁO CHỜ LÂU) -->
+<div class="table-card relative flex flex-col justify-between rounded-xl bg-surface-container-lowest p-space-lg shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 ring-2 ring-tertiary-fixed-dim" data-amount="195000" data-table="02" data-time="12">
+<div>
+<!-- Urgent Notice Banner -->
+<div class="mb-space-md p-space-sm rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex items-center gap-space-xs font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[18px] text-error">warning</span>
+<span class="">Chờ trên 10 phút · Khách đang đợi tại quầy!</span>
+</div>
+<!-- Table Top Header -->
+<div class="flex items-start justify-between gap-space-sm mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed font-headline-sm text-headline-sm">
+              02
+            </div>
+<div>
+<div class="flex items-center gap-space-xs">
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Bàn 02</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(Tầng 1)</span>
+</div>
+<p class="font-label-sm text-label-sm text-error font-medium flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">timer</span> Chờ 12 phút!
+              </p>
+</div>
+</div>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold uppercase tracking-wider">
+            Ưu tiên xử lý
+          </span>
+</div>
+<!-- Order Items -->
+<div class="flex flex-col gap-space-sm mb-space-md">
+<div class="p-space-sm rounded-xl bg-surface-container-low">
+<div class="flex items-center justify-between text-on-surface-variant mb-1">
+<span class="font-label-md text-label-md font-bold text-on-surface">Đơn #A0129</span>
+<span class="font-label-sm text-label-sm text-error font-semibold">12 phút</span>
+</div>
+<div class="flex items-center justify-between text-on-surface">
+<p class="font-body-sm text-body-sm text-on-surface-variant">4x Trà sữa nướng trân châu hoàng kim (Size M, 50% đường)</p>
+<span class="font-title-sm text-title-sm font-semibold whitespace-nowrap">195.000đ</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card Footer Actions -->
+<div class="pt-space-sm">
+<div class="flex items-baseline justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-on-surface-variant">Tổng cần thu:</span>
+<span class="font-headline-md text-headline-md text-error font-bold">195.000đ</span>
+</div>
+<button class="w-full h-12 rounded-xl bg-primary text-on-primary hover:opacity-95 font-title-sm text-title-sm shadow-sm transition-all flex items-center justify-center gap-2" onclick="processPayment('Bàn 02', '195.000đ')" type="button">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+          Ưu tiên thanh toán (195.000đ)
+        </button>
+</div>
+</div>
+<!-- CARD 3: ĐƠN MANG VỀ (TAKEAWAY) -->
+<div class="table-card relative flex flex-col justify-between rounded-xl bg-surface-container-lowest p-space-lg shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-0.5" data-amount="85000" data-table="takeaway" data-time="6">
+<div>
+<!-- Table Top Header -->
+<div class="flex items-start justify-between gap-space-sm mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">local_mall</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Đơn Mang Về</h3>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-medium">Takeaway</span>
+</div>
+<p class="font-label-sm text-label-sm text-outline">Khách: Anh Nam (0901***889)</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-outline flex items-center gap-0.5 pt-1">
+<span class="material-symbols-outlined text-[13px]">schedule</span> 6 phút
+          </span>
+</div>
+<!-- Order Items -->
+<div class="flex flex-col gap-space-sm mb-space-md">
+<div class="p-space-sm rounded-xl bg-surface-container-low">
+<div class="flex items-center justify-between text-on-surface-variant mb-1">
+<span class="font-label-md text-label-md font-bold text-primary">Đơn #A0128</span>
+<span class="font-label-sm text-label-sm text-outline">Đã đóng gói xong</span>
+</div>
+<div class="flex items-center justify-between text-on-surface">
+<p class="font-body-sm text-body-sm text-on-surface-variant">2 món: Trà đào cam sả (L), Bánh Mousse Trà xanh</p>
+<span class="font-title-sm text-title-sm font-semibold whitespace-nowrap">85.000đ</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card Footer Actions -->
+<div class="pt-space-sm">
+<div class="flex items-baseline justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-on-surface-variant">Tổng cần thu:</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">85.000đ</span>
+</div>
+<button class="w-full h-12 rounded-xl bg-primary-container text-on-primary hover:opacity-95 font-title-sm text-title-sm shadow-sm transition-all flex items-center justify-center gap-1.5" onclick="processPayment('Mang Về (Anh Nam)', '85.000đ')" type="button">
+<span class="material-symbols-outlined text-[18px]">payments</span>
+          Thanh toán (85.000đ)
+        </button>
+</div>
+</div>
+<!-- CARD 4: BÀN 08 (SÂN VƯỜN) -->
+<div class="table-card relative flex flex-col justify-between rounded-xl bg-surface-container-lowest p-space-lg shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-0.5" data-amount="90000" data-table="08" data-time="5">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary font-headline-sm text-headline-sm">
+              08
+            </div>
+<div>
+<div class="flex items-center gap-space-xs">
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Bàn 08</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(Sân vườn)</span>
+</div>
+<p class="font-label-sm text-label-sm text-outline">Khu vực ngoài trời giếng trời</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-outline flex items-center gap-0.5 pt-1">
+<span class="material-symbols-outlined text-[13px]">schedule</span> 5 phút
+          </span>
+</div>
+<div class="flex flex-col gap-space-sm mb-space-md">
+<div class="p-space-sm rounded-xl bg-surface-container-low">
+<div class="flex items-center justify-between text-on-surface-variant mb-1">
+<span class="font-label-md text-label-md font-bold text-primary">Đơn #A0130</span>
+<span class="font-label-sm text-label-sm text-outline">Gọi qua QR</span>
+</div>
+<div class="flex items-center justify-between text-on-surface">
+<p class="font-body-sm text-body-sm text-on-surface-variant">2 món: Cà phê hạt dẻ ấm, Trà lài đác thơm</p>
+<span class="font-title-sm text-title-sm font-semibold whitespace-nowrap">90.000đ</span>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-sm">
+<div class="flex items-baseline justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-on-surface-variant">Tổng cần thu:</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">90.000đ</span>
+</div>
+<button class="w-full h-12 rounded-xl bg-primary-container text-on-primary hover:opacity-95 font-title-sm text-title-sm shadow-sm transition-all flex items-center justify-center gap-1.5" onclick="processPayment('Bàn 08', '90.000đ')" type="button">
+<span class="material-symbols-outlined text-[18px]">payments</span>
+          Thanh toán (90.000đ)
+        </button>
+</div>
+</div>
+<!-- CARD 5: BÀN 01 (TẦNG 1) -->
+<div class="table-card relative flex flex-col justify-between rounded-xl bg-surface-container-lowest p-space-lg shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-0.5" data-amount="385000" data-table="01" data-time="3">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary font-headline-sm text-headline-sm">
+              01
+            </div>
+<div>
+<div class="flex items-center gap-space-xs">
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Bàn 01</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(Tầng 1)</span>
+</div>
+<p class="font-label-sm text-label-sm text-outline">Bàn sofa lớn nhóm bạn</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-outline flex items-center gap-0.5 pt-1">
+<span class="material-symbols-outlined text-[13px]">schedule</span> 3 phút
+          </span>
+</div>
+<div class="flex flex-col gap-space-sm mb-space-md">
+<div class="p-space-sm rounded-xl bg-surface-container-low">
+<div class="flex items-center justify-between text-on-surface-variant mb-1">
+<span class="font-label-md text-label-md font-bold text-primary">Đơn #A0132</span>
+<span class="font-label-sm text-label-sm text-on-tertiary-fixed-variant bg-tertiary-fixed px-1.5 py-0.2 rounded font-semibold text-[10px]">Hóa đơn lớn</span>
+</div>
+<div class="flex items-center justify-between text-on-surface">
+<p class="font-body-sm text-body-sm text-on-surface-variant">5 món: Set tiệc trà bánh An Yên thảo mộc &amp; mứt gừng</p>
+<span class="font-title-sm text-title-sm font-semibold whitespace-nowrap">385.000đ</span>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-sm">
+<div class="flex items-baseline justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-on-surface-variant">Tổng cần thu:</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">385.000đ</span>
+</div>
+<button class="w-full h-12 rounded-xl bg-primary-container text-on-primary hover:opacity-95 font-title-sm text-title-sm shadow-sm transition-all flex items-center justify-center gap-1.5" onclick="processPayment('Bàn 01', '385.000đ')" type="button">
+<span class="material-symbols-outlined text-[18px]">payments</span>
+          Thanh toán (385.000đ)
+        </button>
+</div>
+</div>
+<!-- CARD 6: BÀN 07 (TẦNG 2) -->
+<div class="table-card relative flex flex-col justify-between rounded-xl bg-surface-container-lowest p-space-lg shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-0.5" data-amount="240000" data-table="07" data-time="8">
+<div>
+<div class="flex items-start justify-between gap-space-sm mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary font-headline-sm text-headline-sm">
+              07
+            </div>
+<div>
+<div class="flex items-center gap-space-xs">
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Bàn 07</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(Tầng 2)</span>
+</div>
+<p class="font-label-sm text-label-sm text-outline">Góc đọc sách yên tĩnh</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-outline flex items-center gap-0.5 pt-1">
+<span class="material-symbols-outlined text-[13px]">schedule</span> 8 phút
+          </span>
+</div>
+<div class="flex flex-col gap-space-sm mb-space-md">
+<div class="p-space-sm rounded-xl bg-surface-container-low">
+<div class="flex items-center justify-between text-on-surface-variant mb-1">
+<span class="font-label-md text-label-md font-bold text-primary">Đơn #A0133</span>
+<span class="font-label-sm text-label-sm text-outline">Gọi qua QR</span>
+</div>
+<div class="flex items-center justify-between text-on-surface">
+<p class="font-body-sm text-body-sm text-on-surface-variant">4 món: 2 Trà sữa matcha kem tuyết, 2 Bánh tiramisu</p>
+<span class="font-title-sm text-title-sm font-semibold whitespace-nowrap">240.000đ</span>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-sm">
+<div class="flex items-baseline justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-on-surface-variant">Tổng cần thu:</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">240.000đ</span>
+</div>
+<button class="w-full h-12 rounded-xl bg-primary-container text-on-primary hover:opacity-95 font-title-sm text-title-sm shadow-sm transition-all flex items-center justify-center gap-1.5" onclick="processPayment('Bàn 07', '240.000đ')" type="button">
+<span class="material-symbols-outlined text-[18px]">payments</span>
+          Thanh toán (240.000đ)
+        </button>
+</div>
+</div>
+</div>
+<!-- STATE CONTAINER: EMPTY STATE (Hidden by default) -->
+<div class="hidden flex-col items-center justify-center py-20 px-space-xl bg-surface-container-lowest rounded-2xl shadow-sm text-center" id="pos-empty-state">
+<div class="relative w-36 h-36 mb-space-lg flex items-center justify-center">
+<!-- Decorative background circle with artisan warm colors -->
+<div class="absolute inset-0 rounded-full bg-surface-container-high opacity-60"></div>
+<!-- Artisanal Teapot Vector Visual -->
+<svg class="w-24 h-24 text-primary relative z-10" fill="none" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<!-- Floating Steam Path -->
+<path class="text-tertiary-fixed opacity-80" d="M42 22C42 16 46 14 44 8M54 22C54 17 58 15 56 10" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- Teapot Lid -->
+<ellipse cx="50" cy="36" fill="currentColor" rx="16" ry="4"></ellipse>
+<circle cx="50" cy="30" fill="currentColor" r="3.5"></circle>
+<!-- Teapot Body -->
+<path d="M28 42C24 58 32 74 50 74C68 74 76 58 72 42C67 38 33 38 28 42Z" fill="currentColor"></path>
+<!-- Spout -->
+<path d="M28 46C20 44 14 36 12 33C11 36 16 48 24 53L28 46Z" fill="currentColor"></path>
+<!-- Handle -->
+<path d="M71 44C82 46 88 56 86 64C84 70 78 72 73 70C75 66 79 63 78 57C77 52 73 48 71 44Z" fill="currentColor"></path>
+<!-- Bottom Base -->
+<ellipse cx="50" cy="74" fill="#3D2D22" opacity="0.3" rx="14" ry="2.5"></ellipse>
+</svg>
+<!-- Mini checkbadge overlay -->
+<div class="absolute bottom-1 right-2 w-9 h-9 rounded-full bg-surface-container text-primary flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[22px]">verified</span>
+</div>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-space-xs font-bold">
+      Tất cả các bàn đã hoàn tất thanh toán!
+    </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mx-auto mb-space-lg">
+      Không còn hóa đơn nào đang chờ xử lý tại quầy. Không gian quán đang rất an yên, sẵn sàng chào đón đợt khách tiếp theo.
+    </p>
+<div class="flex items-center gap-space-md">
+<button class="px-space-xl py-3 rounded-xl bg-primary-container text-on-primary hover:opacity-95 font-title-sm text-title-sm shadow-sm transition-all flex items-center gap-2" onclick="switchState('default')" type="button">
+<span class="material-symbols-outlined text-[20px]">refresh</span>
+        Tải lại danh sách
+      </button>
+<button class="px-space-lg py-3 rounded-xl bg-surface-container text-on-surface font-title-sm text-title-sm hover:bg-surface-variant transition-all flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[20px]">point_of_sale</span>
+        Tạo đơn tại quầy mới
+      </button>
+</div>
+</div>
+<!-- Bottom Fast Actions Bar -->
+<div class="mt-space-md p-space-md rounded-xl bg-surface-container-low flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md">
+<span class="w-3 h-3 rounded-full bg-tertiary-fixed-dim"></span>
+<span class="">Màu hổ phách: Chờ &gt; 10 phút (Khẩn cấp)</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md">
+<span class="w-3 h-3 rounded-full bg-primary-container"></span>
+<span class="">Nâu ấm: Đơn gộp nhiều lượt gọi</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px]">keyboard</span>
+<span class="">Phím tắt: F2: Tìm kiếm · F8: In lại hóa đơn gần nhất · F9: Kết ca thu ngân</span>
+</div>
+</div>
+<!-- Toast Notification Modal (Micro-interaction placeholder) -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-space-md px-space-lg py-space-md bg-inverse-surface text-surface rounded-xl shadow-xl" id="payment-toast">
+<span class="material-symbols-outlined text-tertiary-fixed text-[24px]">task_alt</span>
+<div>
+<p class="font-title-sm text-title-sm font-semibold" id="toast-title">Đã mở cổng thanh toán</p>
+<p class="font-body-sm text-body-sm text-outline-variant" id="toast-desc">Đang chuyển giao diện POS</p>
+</div>
+</div>
+</div>
+<!-- Interactive Client-side Script for POS Cashier Screen -->
+<script>
+  // Real-time Clock
+  function updateLiveClock() {
+    const clockEl = document.getElementById('pos-live-clock');
+    if (clockEl) {
+      const now = new Date();
+      const h = String(now.getHours()).padStart(2, '0');
+      const m = String(now.getMinutes()).padStart(2, '0');
+      const s = String(now.getSeconds()).padStart(2, '0');
+      clockEl.textContent = `${h}:${m}:${s}`;
+    }
+  }
+  setInterval(updateLiveClock, 1000);
+  updateLiveClock();
+
+  // Switch demo states
+  function switchState(state) {
+    const cardsContainer = document.getElementById('table-cards-container');
+    const emptyState = document.getElementById('pos-empty-state');
+    const searchInput = document.getElementById('pos-search-input');
+    
+    // Tab active states
+    document.querySelectorAll('#view-tabs button').forEach(b => {
+      b.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-sm');
+      b.classList.add('text-on-surface-variant');
+    });
+
+    const activeTab = document.getElementById('tab-' + state);
+    if (activeTab) {
+      activeTab.classList.remove('text-on-surface-variant');
+      activeTab.classList.add('bg-primary-container', 'text-on-primary', 'shadow-sm');
+    }
+
+    if (state === 'empty') {
+      cardsContainer.classList.add('hidden');
+      emptyState.classList.remove('hidden');
+      emptyState.classList.add('flex');
+    } else if (state === 'filtered') {
+      emptyState.classList.add('hidden');
+      emptyState.classList.remove('flex');
+      cardsContainer.classList.remove('hidden');
+      if (searchInput) searchInput.value = 'Bàn 5';
+      handleSearch('Bàn 5');
+    } else {
+      // default
+      emptyState.classList.add('hidden');
+      emptyState.classList.remove('flex');
+      cardsContainer.classList.remove('hidden');
+      if (searchInput) searchInput.value = '';
+      resetAllFilters();
+    }
+  }
+
+  // Live Instant Search
+  function handleSearch(query) {
+    const q = query.trim().toLowerCase();
+    const cards = document.querySelectorAll('.table-card');
+    let hasMatch = false;
+
+    cards.forEach(card => {
+      const tableNum = card.getAttribute('data-table') || '';
+      const textContent = card.innerText.toLowerCase();
+      
+      if (q === '' || textContent.includes(q) || tableNum.includes(q)) {
+        card.style.display = 'flex';
+        hasMatch = true;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    const emptyState = document.getElementById('pos-empty-state');
+    if (!hasMatch && q !== '') {
+      // no results found, keep cards hidden
+    }
+  }
+
+  function clearSearch() {
+    const searchInput = document.getElementById('pos-search-input');
+    if (searchInput) {
+      searchInput.value = '';
+      resetAllFilters();
+    }
+  }
+
+  // Quick Chip Filtering
+  function filterByChip(key) {
+    document.querySelectorAll('.chip-filter').forEach(chip => {
+      chip.classList.remove('bg-primary-container', 'text-on-primary');
+      chip.classList.add('bg-surface-container-low', 'text-on-surface');
+    });
+    event.currentTarget.classList.remove('bg-surface-container-low', 'text-on-surface');
+    event.currentTarget.classList.add('bg-primary-container', 'text-on-primary');
+
+    const cards = document.querySelectorAll('.table-card');
+    cards.forEach(card => {
+      const tableAttr = card.getAttribute('data-table');
+      if (key === 'all' || tableAttr === key) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  function resetAllFilters() {
+    const cards = document.querySelectorAll('.table-card');
+    cards.forEach(card => card.style.display = 'flex');
+    document.querySelectorAll('.chip-filter').forEach((chip, i) => {
+      if (i === 0) {
+        chip.classList.add('bg-primary-container', 'text-on-primary');
+        chip.classList.remove('bg-surface-container-low', 'text-on-surface');
+      } else {
+        chip.classList.remove('bg-primary-container', 'text-on-primary');
+        chip.classList.add('bg-surface-container-low', 'text-on-surface');
+      }
+    });
+  }
+
+  // Sorting
+  function setSortMode(mode) {
+    const container = document.getElementById('table-cards-container');
+    const cards = Array.from(document.querySelectorAll('.table-card'));
+    const btnTime = document.getElementById('sort-time');
+    const btnAmount = document.getElementById('sort-amount');
+
+    if (mode === 'time') {
+      btnTime.className = "px-space-md py-1.5 rounded-xl bg-surface-container font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1 shadow-sm";
+      btnAmount.className = "px-space-md py-1.5 rounded-xl bg-surface-container-low font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-1";
+      cards.sort((a, b) => Number(b.getAttribute('data-time')) - Number(a.getAttribute('data-time')));
+    } else {
+      btnAmount.className = "px-space-md py-1.5 rounded-xl bg-surface-container font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1 shadow-sm";
+      btnTime.className = "px-space-md py-1.5 rounded-xl bg-surface-container-low font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-1";
+      cards.sort((a, b) => Number(b.getAttribute('data-amount')) - Number(a.getAttribute('data-amount')));
+    }
+
+    cards.forEach(c => container.appendChild(c));
+  }
+
+  // Actions
+  function processPayment(tableName, amount) {
+    showToast(`Mở thanh toán: ${tableName}`, `Tổng tiền: ${amount} · Chờ quẹt thẻ / tiền mặt`);
+  }
+
+  function splitOrder(tableName) {
+    showToast(`Tách hóa đơn: ${tableName}`, `Đang mở trình chọn món tách đợt #A0127 và #A0131`);
+  }
+
+  function showToast(title, desc) {
+    const toast = document.getElementById('payment-toast');
+    const titleEl = document.getElementById('toast-title');
+    const descEl = document.getElementById('toast-desc');
+    if (!toast) return;
+
+    titleEl.textContent = title;
+    descEl.textContent = desc;
+
+    toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    setTimeout(() => {
+      toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 2800);
+  }
+
+  // Keyboard shortcut listener
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      clearSearch();
+    }
+  });
+</script></main></div>
+
+<script src="js/config.js"></script><script src="js/api.js"></script><script src="js/nav.js"></script><script src="js/notice.js"></script></body></html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_blank" name="shell-type"/><title>Tiệm Trà An Yên - Đăng Nhập Hệ Thống</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {"darkMode":"class","theme":{"extend":{"colors":{"error-container":"#ffdad6","surface":"#fff8f5","outline-variant":"#d6c3b9","primary":"#5f3318","on-secondary-fixed":"#2b1613","on-surface-variant":"#52443d","on-error-container":"#93000a","tertiary":"#553a00","on-primary-container":"#ffbd99","surface-bright":"#fff8f5","surface-dim":"#f0d5c5","on-error":"#ffffff","tertiary-fixed":"#ffdeaa","primary-fixed-dim":"#fab893","on-primary-fixed":"#331200","surface-container-highest":"#f9ddcd","inverse-surface":"#3d2d22","surface-container":"#ffeade","inverse-primary":"#fab893","on-tertiary-fixed-variant":"#5f4100","on-primary":"#ffffff","surface-container-high":"#ffe3d2","on-background":"#27180f","primary-fixed":"#ffdbc9","on-tertiary":"#ffffff","secondary-fixed":"#ffdad4","secondary-fixed-dim":"#e3beb8","surface-variant":"#f9ddcd","secondary":"#745853","on-secondary":"#ffffff","on-tertiary-container":"#fcc35d","on-tertiary-fixed":"#271900","on-secondary-container":"#795c57","tertiary-container":"#735000","surface-container-lowest":"#ffffff","inverse-on-surface":"#ffede4","background":"#fff8f5","secondary-container":"#fed7d0","on-surface":"#27180f","on-primary-fixed-variant":"#693b1f","error":"#ba1a1a","tertiary-fixed-dim":"#f5bd58","surface-container-low":"#fff1ea","outline":"#84746c","surface-tint":"#855234","primary-container":"#7b4a2d","on-secondary-fixed-variant":"#5b403c"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter":"0.75rem","space-xl":"1.5rem","space-xs":"0.25rem","space-md":"0.75rem","space-lg":"1rem","margin":"1rem","space-sm":"0.5rem"},"fontFamily":{"body-md":["Be Vietnam Pro"],"label-md":["Be Vietnam Pro"],"title-sm":["Be Vietnam Pro"],"headline-md":["Be Vietnam Pro"],"headline-sm":["Be Vietnam Pro"],"headline-lg":["Be Vietnam Pro"],"label-lg":["Be Vietnam Pro"],"body-lg":["Be Vietnam Pro"],"label-sm":["Be Vietnam Pro"],"body-sm":["Be Vietnam Pro"],"title-md":["Be Vietnam Pro"]},"fontSize":{"body-md":["14px",{"lineHeight":"21px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"title-sm":["14px",{"lineHeight":"20px","fontWeight":"600"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"26px","fontWeight":"600"}],"headline-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"17px","fontWeight":"400"}],"title-md":["16px",{"lineHeight":"22px","fontWeight":"600"}]}}}};</script></head><body class="min-h-full bg-surface text-on-surface font-body-md text-body-md antialiased selection:bg-primary-container selection:text-on-primary-container"><main class="min-h-screen w-full bg-surface flex flex-col justify-center"><div class="flex flex-col w-full">
+
+<!-- Split Screen Auth Canvas -->
+<div class="w-full flex flex-col lg:flex-row min-h-[calc(100vh-45px)]">
+<!-- Left Column: Espresso Artisanal Brand Panel (45% on desktop) -->
+<section class="lg:w-[45%] w-full bg-inverse-surface text-inverse-on-surface relative overflow-hidden flex flex-col justify-between p-8 sm:p-12 lg:p-16">
+<!-- Background Ambient Illustration Pattern (Tea leaves, teapots, steam) -->
+<div aria-hidden="true" class="absolute inset-0 opacity-10 pointer-events-none select-none overflow-hidden">
+<svg class="w-full h-full object-cover" fill="none" stroke="currentColor" viewbox="0 0 800 1000">
+<path d="M120 180 C180 120, 220 220, 300 160 S400 240, 480 190" stroke-linecap="round" stroke-width="2"></path>
+<path d="M60 480 C140 420, 180 540, 260 500 S360 560, 440 490" stroke-dasharray="6 6" stroke-width="2"></path>
+<!-- Tea Leaf SVG Elements -->
+<path d="M650 140 C690 90, 750 120, 740 180 C700 210, 640 190, 650 140 Z M650 140 L720 170" stroke-width="2.5"></path>
+<path d="M180 780 C230 720, 290 760, 280 820 C240 860, 170 840, 180 780 Z M180 780 L260 810" stroke-width="2.5"></path>
+<!-- Teapot Silhouette Line -->
+<path d="M520 620 C520 570, 580 550, 640 550 C700 550, 750 570, 750 620 C750 690, 690 710, 635 710 C580 710, 520 690, 520 620 Z" stroke-width="2"></path>
+<path d="M750 590 C790 590, 810 630, 790 660 C770 690, 745 680, 740 670" stroke-width="2.5"></path>
+<path d="M520 610 C480 610, 460 560, 480 540 C495 525, 525 545, 535 565" stroke-width="2.5"></path>
+<path d="M610 550 C610 520, 660 520, 660 550" stroke-width="2"></path>
+<!-- Steam curls -->
+<path d="M625 500 Q615 470 635 440 T620 400" stroke-linecap="round" stroke-width="2"></path>
+<path d="M650 495 Q660 465 640 435 T655 395" stroke-linecap="round" stroke-width="2"></path>
+<!-- Milk Tea Cup Contour -->
+<path d="M160 300 L180 430 Q185 450 220 450 L260 450 Q295 450 300 430 L320 300 Z" stroke-width="2"></path>
+<path d="M150 300 Q240 310 330 300" stroke-width="2.5"></path>
+<path d="M230 260 L245 420" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- Boba Pearls -->
+<circle cx="210" cy="425" r="9" stroke-width="1.8"></circle>
+<circle cx="240" cy="428" r="9" stroke-width="1.8"></circle>
+<circle cx="270" cy="423" r="9" stroke-width="1.8"></circle>
+<circle cx="225" cy="405" r="8" stroke-width="1.8"></circle>
+<circle cx="255" cy="408" r="8" stroke-width="1.8"></circle>
+</svg>
+</div>
+<!-- Top Header & Brand Identity -->
+<div class="relative z-10 flex flex-col gap-6">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary shadow-md">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-surface-bright tracking-tight">Tiệm Trà An Yên</span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim uppercase tracking-widest">Hệ Thống Quản Trị Cửa Hàng</span>
+</div>
+</div>
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-on-background/40 w-fit text-primary-fixed">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim animate-pulse"></span>
+<span class="font-label-md text-label-md font-medium">Phiên bản POS 3.4.2 · Bàn QR Thời Thực</span>
+</div>
+</div>
+<!-- Middle Main Hero Copy -->
+<div class="relative z-10 my-auto py-10 flex flex-col gap-5">
+<div class="space-y-3">
+<h1 class="font-headline-lg text-headline-lg lg:text-[34px] lg:leading-[42px] font-bold text-surface-bright tracking-tight">
+            Quản lý quán trà sữa<br class="hidden sm:inline"/> dễ dàng &amp; tinh gọn
+          </h1>
+<p class="font-body-lg text-body-lg text-inverse-on-surface/85 max-w-lg leading-relaxed">
+            Giải pháp vận hành tinh gọn, kiểm soát đơn đặt món tại bàn QR và tối ưu phục vụ cho nhân viên &amp; quản lý quán.
+          </p>
+</div>
+<!-- Decorative visual metric snippet -->
+<div class="grid grid-cols-2 gap-3 max-w-md pt-4">
+<div class="bg-surface-container/10 p-3.5 rounded-xl">
+<div class="font-headline-sm text-headline-sm text-surface-bright">99.8%</div>
+<div class="font-label-md text-label-md text-primary-fixed-dim">Đơn đặt bàn chuẩn xác</div>
+</div>
+<div class="bg-surface-container/10 p-3.5 rounded-xl">
+<div class="font-headline-sm text-headline-sm text-surface-bright">&lt; 15s</div>
+<div class="font-label-md text-label-md text-primary-fixed-dim">Thời gian đẩy đơn pha chế</div>
+</div>
+</div>
+</div>
+<!-- Bottom Feature Highlights / Bullet Pills -->
+<div class="relative z-10 flex flex-col gap-3 pt-6">
+<div class="flex flex-wrap gap-2.5">
+<div class="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-surface-container/15 text-surface-bright shadow-sm">
+<span class="material-symbols-outlined text-tertiary-fixed text-title-md">sync</span>
+<span class="font-label-lg text-label-lg">Đồng bộ đơn hàng tức thì</span>
+</div>
+<div class="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-surface-container/15 text-surface-bright shadow-sm">
+<span class="material-symbols-outlined text-tertiary-fixed text-title-md">table_restaurant</span>
+<span class="font-label-lg text-label-lg">Kiểm soát bàn theo thời gian thực</span>
+</div>
+<div class="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-surface-container/15 text-surface-bright shadow-sm">
+<span class="material-symbols-outlined text-tertiary-fixed text-title-md">analytics</span>
+<span class="font-label-lg text-label-lg">Báo cáo doanh thu chuẩn xác</span>
+</div>
+</div>
+<div class="font-body-sm text-body-sm text-inverse-on-surface/60 pt-2">
+          © 2024 Tiệm Trà An Yên. Hệ thống phân phối &amp; nhượng quyền thương hiệu nội bộ.
+        </div>
+</div>
+</section>
+<!-- Right Column: Authentication Card Panel (55% on desktop) -->
+<section class="lg:w-[55%] w-full bg-surface flex items-center justify-center p-6 sm:p-10 lg:p-16 relative">
+<!-- Subtle Ambient background flare -->
+<div aria-hidden="true" class="absolute top-12 right-12 w-64 h-64 bg-surface-container-high/40 rounded-full blur-3xl pointer-events-none"></div>
+<div aria-hidden="true" class="absolute bottom-12 left-12 w-72 h-72 bg-secondary-container/30 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Authentication Form Card Container -->
+<div class="w-full max-w-[420px] bg-surface-container-lowest p-8 sm:p-10 rounded-2xl shadow-xl relative z-10 flex flex-col gap-6">
+<!-- Header Info -->
+<div class="flex flex-col gap-2">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-primary w-fit">
+<span class="material-symbols-outlined text-title-sm">badge</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wide">CỔNG NỘI BỘ · NHÂN VIÊN &amp; QUẢN LÝ</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface mt-1">Đăng nhập</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Nhập tài khoản được cấp bởi hệ thống quản lý quán.
+          </p>
+</div>
+<!-- Dynamic Status/Alert Banners -->
+<!-- Error Banner: Wrong Password (Hidden by default) -->
+<div class="hidden flex items-start gap-3 p-3.5 rounded-xl bg-error-container text-on-error-container animate-in fade-in duration-200" id="banner-error-pw">
+<span class="material-symbols-outlined text-headline-sm flex-shrink-0" style="font-variation-settings: 'FILL' 1;">error</span>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm">Đăng nhập không thành công</span>
+<span class="font-body-sm text-body-sm">Tên đăng nhập hoặc mật khẩu không đúng. Vui lòng kiểm tra lại.</span>
+</div>
+</div>
+<!-- Warning Banner: Account Locked (Hidden by default) -->
+<div class="hidden flex items-start gap-3 p-3.5 rounded-xl bg-secondary-container text-on-secondary-fixed animate-in fade-in duration-200" id="banner-locked">
+<span class="material-symbols-outlined text-headline-sm flex-shrink-0" style="font-variation-settings: 'FILL' 1;">lock_person</span>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm font-semibold">Tài khoản tạm thời bị khóa</span>
+<span class="font-body-sm text-body-sm">Tài khoản đã bị khóa do nhập sai nhiều lần hoặc yêu cầu từ chủ quán. Vui lòng liên hệ quản lý trực ca.</span>
+</div>
+</div>
+<!-- Login Form -->
+<form class="flex flex-col gap-5" id="auth-form" onsubmit="event.preventDefault(); simulateSubmit();">
+<!-- Field 1: Username -->
+<div class="flex flex-col gap-1.5" id="group-username">
+<label class="font-label-md text-label-md text-on-surface-variant flex items-center justify-between" for="input-username">
+<span>Tên đăng nhập</span>
+<span class="text-label-sm font-label-sm text-primary uppercase hidden" id="badge-username">Đang nhập</span>
+</label>
+<div class="relative flex items-center rounded-xl bg-surface-container-low transition-all duration-200" id="wrapper-username">
+<span class="material-symbols-outlined absolute left-3.5 text-headline-sm text-outline pointer-events-none">account_circle</span>
+<input autocomplete="username" class="w-full h-12 pl-11 pr-4 bg-transparent text-on-surface font-body-md text-body-md placeholder:text-outline/70 focus:outline-none rounded-xl" id="input-username" placeholder="Nhập mã nhân viên hoặc tên đăng nhập" required="" type="text" value=""/>
+</div>
+</div>
+<!-- Field 2: Password -->
+<div class="flex flex-col gap-1.5" id="group-password">
+<label class="font-label-md text-label-md text-on-surface-variant flex items-center justify-between" for="input-password">
+<span>Mật khẩu</span>
+<span class="text-label-sm font-label-sm text-primary uppercase hidden" id="badge-password">Bảo mật</span>
+</label>
+<div class="relative flex items-center rounded-xl bg-surface-container-low transition-all duration-200" id="wrapper-password">
+<span class="material-symbols-outlined absolute left-3.5 text-headline-sm text-outline pointer-events-none">lock</span>
+<input autocomplete="current-password" class="w-full h-12 pl-11 pr-12 bg-transparent text-on-surface font-body-md text-body-md placeholder:text-outline/70 focus:outline-none rounded-xl" id="input-password" placeholder="Nhập mật khẩu ca làm" required="" type="password" value=""/>
+<!-- Interactive Eye Toggle Button -->
+<button class="absolute right-3 p-1.5 text-outline hover:text-on-surface rounded-lg transition-colors flex items-center justify-center" id="toggle-pw-btn" onclick="togglePasswordVisibility()" title="Hiển thị hoặc ẩn mật khẩu" type="button">
+<span class="material-symbols-outlined text-title-md" id="icon-eye">visibility</span>
+</button>
+</div>
+</div>
+<!-- Role Selector Mini Chips (Helpful operational context for staff) -->
+<div class="flex flex-col gap-2 pt-1">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Khu vực làm việc</span>
+<div class="grid grid-cols-2 gap-2">
+<label class="flex items-center gap-2 p-2.5 rounded-xl bg-surface-container cursor-pointer transition-all">
+<input checked="" class="accent-primary" name="workstation" type="radio" value="pos"/>
+<span class="font-label-md text-label-md text-on-surface">Thu ngân / Phục vụ</span>
+</label>
+<label class="flex items-center gap-2 p-2.5 rounded-xl bg-surface-container cursor-pointer transition-all">
+<input class="accent-primary" name="workstation" type="radio" value="bar"/>
+<span class="font-label-md text-label-md text-on-surface">Quầy Pha chế (Bar)</span>
+</label>
+</div>
+</div>
+<!-- Submit CTA Button -->
+<div class="pt-2">
+<button class="w-full h-12 rounded-xl bg-primary-container text-surface hover:bg-primary font-label-lg text-label-lg font-bold shadow-md transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer active:scale-[0.99]" id="submit-btn" type="submit">
+<span id="btn-text">Đăng nhập ca làm việc</span>
+<span class="material-symbols-outlined text-title-md" id="btn-icon">arrow_forward</span>
+<!-- Spinner (Hidden by default) -->
+<div class="hidden items-center justify-center" id="btn-spinner">
+<svg class="animate-spin h-5 w-5 text-surface" fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+<path class="opacity-75" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" fill="currentColor"></path>
+</svg>
+</div>
+</button>
+</div>
+</form>
+<!-- STRICT CONSTRAINT NOTICE: NO Signup, NO Forgot Password -->
+<div class="p-3 rounded-xl bg-surface-container flex items-start gap-2.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-title-sm text-outline flex-shrink-0 mt-0.5">verified_user</span>
+<p class="font-body-sm text-body-sm leading-relaxed">
+            Hệ thống nội bộ · Tài khoản &amp; mật khẩu do quản lý cửa hàng trực tiếp cấp và phân quyền. Không tự đăng ký ngoài luồng.
+          </p>
+</div>
+<!-- Terminal Identifier / Store Branch Info -->
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm pt-1">
+<span class="flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+            Điểm bán: Chi nhánh Thảo Điền (Quận 2)
+          </span>
+<span>Máy POS-01</span>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script src="js/config.js"></script><script src="js/api.js"></script><script src="js/login.js"></script></main></body></html>

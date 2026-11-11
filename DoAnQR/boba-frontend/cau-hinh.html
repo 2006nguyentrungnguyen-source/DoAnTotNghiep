@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "surface-variant": "#f9ddcd",
+        "on-error-container": "#93000a",
+        "outline": "#84746c",
+        "on-tertiary-fixed-variant": "#5f4100",
+        "tertiary-fixed-dim": "#f5bd58",
+        "on-primary": "#ffffff",
+        "on-primary-fixed": "#331200",
+        "surface": "#fff8f5",
+        "on-tertiary-container": "#fcc35d",
+        "primary": "#5f3318",
+        "primary-fixed": "#ffdbc9",
+        "on-secondary-fixed-variant": "#5b403c",
+        "primary-fixed-dim": "#fab893",
+        "error-container": "#ffdad6",
+        "surface-bright": "#fff8f5",
+        "on-tertiary": "#ffffff",
+        "on-background": "#27180f",
+        "secondary-fixed-dim": "#e3beb8",
+        "surface-container-lowest": "#ffffff",
+        "secondary": "#745853",
+        "on-secondary": "#ffffff",
+        "outline-variant": "#d6c3b9",
+        "error": "#ba1a1a",
+        "on-error": "#ffffff",
+        "secondary-container": "#fed7d0",
+        "on-secondary-container": "#795c57",
+        "surface-dim": "#f0d5c5",
+        "surface-container-highest": "#f9ddcd",
+        "surface-tint": "#855234",
+        "on-primary-fixed-variant": "#693b1f",
+        "tertiary": "#553a00",
+        "surface-container": "#ffeade",
+        "surface-container-low": "#fff1ea",
+        "on-surface-variant": "#52443d",
+        "on-primary-container": "#ffbd99",
+        "tertiary-fixed": "#ffdeaa",
+        "on-secondary-fixed": "#2b1613",
+        "on-surface": "#27180f",
+        "surface-container-high": "#ffe3d2",
+        "on-tertiary-fixed": "#271900",
+        "background": "#fff8f5",
+        "secondary-fixed": "#ffdad4",
+        "primary-container": "#7b4a2d",
+        "inverse-surface": "#3d2d22",
+        "inverse-on-surface": "#ffede4",
+        "inverse-primary": "#fab893",
+        "tertiary-container": "#735000"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.25rem",
+        "lg": "0.5rem",
+        "xl": "0.75rem",
+        "full": "9999px"
+      },
+      "spacing": {
+        "space-xs": "0.25rem",
+        "gutter": "0.75rem",
+        "space-lg": "1rem",
+        "space-md": "0.75rem",
+        "margin": "1rem",
+        "space-sm": "0.5rem",
+        "space-xl": "1.5rem"
+      },
+      "fontFamily": {
+        "body-lg": ["Be Vietnam Pro"],
+        "title-sm": ["Be Vietnam Pro"],
+        "body-md": ["Be Vietnam Pro"],
+        "body-sm": ["Be Vietnam Pro"],
+        "headline-md": ["Be Vietnam Pro"],
+        "label-md": ["Be Vietnam Pro"],
+        "title-md": ["Be Vietnam Pro"],
+        "headline-lg": ["Be Vietnam Pro"],
+        "label-sm": ["Be Vietnam Pro"],
+        "label-lg": ["Be Vietnam Pro"],
+        "headline-sm": ["Be Vietnam Pro"]
+      },
+      "fontSize": {
+        "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+        "title-sm": ["14px", {"lineHeight": "20px", "fontWeight": "600"}],
+        "body-md": ["14px", {"lineHeight": "21px", "fontWeight": "400"}],
+        "body-sm": ["12px", {"lineHeight": "17px", "fontWeight": "400"}],
+        "headline-md": ["22px", {"lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+        "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+        "title-md": ["16px", {"lineHeight": "22px", "fontWeight": "600"}],
+        "headline-lg": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+        "label-sm": ["10px", {"lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "700"}],
+        "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+        "headline-sm": ["18px", {"lineHeight": "26px", "fontWeight": "600"}]
+      }
+    }
+  }
+}</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><aside class="fixed left-0 top-0 bottom-0 w-72 bg-surface-container-low shadow-[0_1px_8px_rgba(62,39,35,0.06)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="h-20 px-6 flex items-center gap-3 bg-surface-container-low"><div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-[0_2px_8px_rgba(95,51,24,0.25)]"><span class="material-symbols-outlined text-[24px]">local_cafe</span></div><div class="flex flex-col"><span class="font-title-md text-title-md text-on-surface leading-tight">Tiệm Trà An Yên</span><span class="font-label-sm text-label-sm text-secondary tracking-wide uppercase">Boutique Tea Craft</span></div></div><div class="px-4 py-3"><div class="px-3 pb-2 pt-1"><span class="font-label-sm text-label-sm text-secondary tracking-wider uppercase font-bold">Vận Hành (Nhân Viên)</span></div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-title-sm shadow-[0_2px_8px_rgba(123,74,45,0.2)]"><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="don-hang" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span>Đơn hàng</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="goi-mon-tai-quay" href="#"><span class="material-symbols-outlined text-[20px]">point_of_sale</span><span>Gọi món tại quầy</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="thanh-toan" href="#"><span class="material-symbols-outlined text-[20px]">payments</span><span>Thanh toán</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="het-mon" href="#"><span class="material-symbols-outlined text-[20px]">remove_shopping_cart</span><span>Hết món</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="ban-van-hanh" href="#"><span class="material-symbols-outlined text-[20px]">table_restaurant</span><span>Bàn</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="chot-ca" href="#"><span class="material-symbols-outlined text-[20px]">lock_clock</span><span>Chốt ca</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="lich-su" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span>Lịch sử</span></a></nav></div><div class="px-4 py-2"><div class="px-3 pb-2 pt-2"><span class="font-label-sm text-label-sm text-secondary tracking-wider uppercase font-bold">Quản Trị (Chủ Quán)</span></div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-title-sm shadow-[0_2px_8px_rgba(123,74,45,0.2)]"><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="thong-ke" href="#"><span class="material-symbols-outlined text-[20px]">bar_chart</span><span>Thống kê</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="danh-muc" href="#"><span class="material-symbols-outlined text-[20px]">category</span><span>Danh mục</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="mon" href="#"><span class="material-symbols-outlined text-[20px]">emoji_food_beverage</span><span>Món</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="size-topping" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span>Size &amp; Topping</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="ban-qr" href="#"><span class="material-symbols-outlined text-[20px]">qr_code_2</span><span>Bàn &amp; QR</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="nhan-vien" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span>Nhân viên</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="ma-giam-gia" href="#"><span class="material-symbols-outlined text-[20px]">loyalty</span><span>Mã giảm giá</span></a><a aria-current="page" class="flex items-center gap-3 px-3 py-2.5 rounded-lg transition-colors bg-primary-container text-on-primary font-title-sm shadow-[0_2px_8px_rgba(123,74,45,0.2)]" data-path="cau-hinh-quan" href="#"><span class="material-symbols-outlined text-[20px]">store</span><span>Cấu hình quán</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant font-body-md text-body-md hover:bg-surface-container hover:text-on-surface transition-colors" data-path="doi-mat-khau" href="#"><span class="material-symbols-outlined text-[20px]">password</span><span>Đổi mật khẩu</span></a></nav></div></div><div class="p-4 m-4 rounded-xl bg-surface-container flex items-center justify-between"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-tertiary-container">energy_savings_leaf</span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface font-bold">Trạng thái quán</span><span class="font-body-sm text-body-sm text-secondary">Đang mở cửa</span></div></div><div class="w-2.5 h-2.5 rounded-full bg-emerald-600 animate-pulse"></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-20 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(62,39,35,0.05)] z-40 flex items-center justify-between px-8"><div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm"><span class="hover:text-primary transition-colors cursor-pointer">Chi nhánh Thảo Điền</span><span class="material-symbols-outlined text-[16px] text-outline-variant">chevron_right</span><span class="hover:text-primary transition-colors cursor-pointer">Quản trị quán</span><span class="material-symbols-outlined text-[16px] text-outline-variant">chevron_right</span><span class="font-title-sm text-title-sm text-on-surface font-semibold">Cấu hình quán</span></div><div class="flex items-center gap-6"><div class="relative flex items-center w-72"><span class="material-symbols-outlined absolute left-3 text-[20px] text-outline">search</span><input class="w-full h-10 pl-10 pr-4 rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:bg-surface-container transition-all" placeholder="Tìm kiếm nhanh..." type="text"/></div><button class="relative w-10 h-10 rounded-xl bg-surface-container-low flex items-center justify-center text-on-surface hover:bg-surface-container hover:text-primary transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-3 pl-2"><div class="flex flex-col text-right"><span class="font-title-sm text-title-sm text-on-surface font-semibold leading-tight">Nguyễn An Yên</span><span class="font-label-sm text-label-sm text-secondary">Chủ quán</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 px-8 pb-12 bg-background flex-1"><div class="flex flex-col w-full">
+<!-- Toast Thông báo Lưu Thành Công (Nổi trên đỉnh góc phải hoặc thanh ngang cố định) -->
+<div class="hidden mb-6 transition-all duration-300" id="toastSuccess">
+<div class="flex items-center justify-between p-4 rounded-xl bg-[#4D6B53] text-[#ffffff] shadow-lg">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[24px]">check_circle</span>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm font-semibold">Cập nhật cấu hình thành công!</span>
+<span class="font-body-sm text-body-sm opacity-90">Toàn bộ thông tin nhận diện thương hiệu và mã thanh toán đã được đồng bộ trên hệ thống.</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-black/10 transition-colors" onclick="hideToast()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+</div>
+<!-- THANH KỊCH BẢN KIỂM THỬ (Scenario Switcher) -->
+<div class="mb-8 p-4 rounded-2xl bg-surface-container shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">science</span>
+<span class="font-label-sm text-label-sm uppercase font-bold text-primary tracking-wider">Kịch Bản Kiểm Thử Giao Diện</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">Chọn để kiểm tra phản hồi tương tác theo từng trường hợp dữ liệu</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
+<button class="scenario-btn flex items-center gap-2 px-3.5 py-2.5 rounded-xl font-title-sm text-title-sm transition-all text-left bg-primary-container text-on-primary shadow-sm" id="btnScenario1" onclick="setScenario(1)">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span class="truncate">1. Mặc định (Đầy đủ)</span>
+</button>
+<button class="scenario-btn flex items-center gap-2 px-3.5 py-2.5 rounded-xl font-title-sm text-title-sm transition-all text-left bg-surface-container-low text-on-surface hover:bg-surface-container-high" id="btnScenario2" onclick="setScenario(2)">
+<span class="material-symbols-outlined text-[18px]">hide_image</span>
+<span class="truncate">2. Chưa tải QR ngân hàng</span>
+</button>
+<button class="scenario-btn flex items-center gap-2 px-3.5 py-2.5 rounded-xl font-title-sm text-title-sm transition-all text-left bg-surface-container-low text-on-surface hover:bg-surface-container-high" id="btnScenario3" onclick="setScenario(3)">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+<span class="truncate">3. Lỗi ảnh sai định dạng</span>
+</button>
+<button class="scenario-btn flex items-center gap-2 px-3.5 py-2.5 rounded-xl font-title-sm text-title-sm transition-all text-left bg-surface-container-low text-on-surface hover:bg-surface-container-high" id="btnScenario4" onclick="setScenario(4)">
+<span class="material-symbols-outlined text-[18px]">notifications_active</span>
+<span class="truncate">4. Lưu thành công (Toast)</span>
+</button>
+</div>
+</div>
+<!-- TIÊU ĐỀ TRANG VÀ GIỚI THIỆU -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+<div class="flex flex-col">
+<div class="flex items-center gap-2 mb-1.5">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold uppercase tracking-wider">Hệ thống cốt lõi</span>
+<span class="font-body-sm text-body-sm text-secondary">Cập nhật lần cuối: Hôm nay, 14:30</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">Cấu hình thông tin &amp; Thanh toán quán</h1>
+<p class="font-body-md text-body-md text-secondary mt-1 max-w-2xl">
+        Thiết lập nhận diện thương hiệu, thông tin in trên hóa đơn và tài khoản thanh toán chuyển khoản cố định của quán.
+      </p>
+</div>
+<div class="flex items-center gap-3">
+<button class="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-primary text-on-primary font-title-sm text-title-sm hover:bg-primary-container shadow-md transition-all active:scale-95" onclick="triggerGlobalSave()">
+<span class="material-symbols-outlined text-[20px]">save</span>
+<span>Lưu tất cả thay đổi</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-8 pb-16">
+<!-- ==========================================
+         THẺ 1: THÔNG TIN QUÁN & NHẬN DIỆN THƯƠNG HIỆU
+         ========================================== -->
+<section class="rounded-2xl bg-surface-container-lowest shadow-[0_4px_20px_rgba(62,39,35,0.06)] p-6 lg:p-8 flex flex-col gap-6">
+<!-- Header Thẻ -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 bg-surface-container-lowest">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-xl bg-surface-container-high flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[24px]">storefront</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">1. Thông tin quán &amp; Nhận diện thương hiệu</h2>
+<p class="font-body-sm text-body-sm text-secondary">Dữ liệu hiển thị trực tiếp trên trang đặt món di động của thực khách và hóa đơn</p>
+</div>
+</div>
+<button class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-primary-container text-on-primary font-title-sm text-title-sm hover:bg-primary transition-colors shadow-sm self-start sm:self-auto" onclick="showToastNotification('Đã lưu thông tin quán!')">
+<span class="material-symbols-outlined text-[18px]">check</span>
+<span>Lưu thông tin quán</span>
+</button>
+</div>
+<!-- Nội dung Thẻ 1 -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Khu vực Logo (Trái) -->
+<div class="lg:col-span-4 flex flex-col items-center p-6 rounded-xl bg-surface-container-low text-center">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold mb-1">Logo đại diện thương hiệu</span>
+<span class="font-body-sm text-body-sm text-secondary mb-5">Hiển thị góc menu QR &amp; đầu bill tính tiền</span>
+<!-- Vòng xem trước logo -->
+<div class="relative w-28 h-28 rounded-full bg-surface-container-lowest p-1.5 shadow-md flex items-center justify-center mb-4 group cursor-pointer">
+<div class="w-full h-full rounded-full overflow-hidden bg-primary-container/10 flex items-center justify-center relative">
+<img class="w-full h-full object-cover" data-alt="Minimalist elegant emblem logo of An Yen Tea House featuring an artisanal ceramic teapot with soft steam and tea leaves in warm espresso and caramel palette, pure cream background, flat vector mark" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuv6IPC3VTToDZifH7lCzGjlqy3pYmASSoDZRjB7srjWWSds25LhWJ98AJ6XjwvdvRYQJ7Wyu2dDOVQalgMjQQfzfiilyQek6FNZDW6VdCwzRyTbL7zKYyOPvwmHEsSmSGWjwxWVRBqz3GoSDu-E2njULauK7w2frfZcw3WPL7BXspUuSY9xXnbLT4yMng-bRRBoe7fX_Xo7vc4mHy31eE5V68LmETRdlzu4uCQ0U6"/>
+<div class="absolute inset-0 bg-inverse-surface/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-white text-[24px]">photo_camera</span>
+</div>
+</div>
+<div class="absolute -bottom-1 -right-1 w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</div>
+</div>
+<div class="flex items-center gap-2 mb-3">
+<button class="px-3.5 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-all">
+              Thay đổi logo
+            </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-error font-label-md text-label-md hover:bg-error-container transition-all">
+              Xóa logo
+            </button>
+</div>
+<p class="font-body-sm text-body-sm text-secondary text-center px-2">
+            Khuyên dùng định dạng PNG trong suốt, tỉ lệ 1:1 (tối thiểu 400x400px), dung lượng &lt; 2MB.
+          </p>
+</div>
+<!-- Form nhập liệu thông tin (Phải) -->
+<div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Tên quán -->
+<div class="md:col-span-2 flex flex-col gap-1.5">
+<label class="font-title-sm text-title-sm text-on-surface font-semibold flex items-center gap-1">
+              Tên quán / Thương hiệu <span class="text-error">*</span>
+</label>
+<input class="w-full h-11 px-4 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" type="text" value="Tiệm Trà An Yên - Trà Thủ Công &amp; Đậm Vị"/>
+</div>
+<!-- Địa chỉ quán -->
+<div class="md:col-span-2 flex flex-col gap-1.5">
+<label class="font-title-sm text-title-sm text-on-surface font-semibold flex items-center gap-1">
+              Địa chỉ quán <span class="text-error">*</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-[20px] text-secondary">location_on</span>
+<input class="w-full h-11 pl-11 pr-4 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" type="text" value="Số 18 Đường Thảo Điền, Phường Thảo Điền, TP. Thủ Đức, TP. Hồ Chí Minh"/>
+</div>
+</div>
+<!-- Hotline -->
+<div class="flex flex-col gap-1.5">
+<label class="font-title-sm text-title-sm text-on-surface font-semibold flex items-center gap-1">
+              Số điện thoại hotline / CSKH <span class="text-error">*</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-[20px] text-secondary">call</span>
+<input class="w-full h-11 pl-11 pr-4 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" type="text" value="0903 123 456"/>
+</div>
+</div>
+<!-- Hotline phụ -->
+<div class="flex flex-col gap-1.5">
+<label class="font-title-sm text-title-sm text-on-surface font-semibold flex items-center gap-1">
+              Hotline tổng đài phụ (Tùy chọn)
+            </label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-[20px] text-secondary">support_agent</span>
+<input class="w-full h-11 pl-11 pr-4 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" type="text" value="028 3822 9988"/>
+</div>
+</div>
+<!-- Email -->
+<div class="flex flex-col gap-1.5">
+<label class="font-title-sm text-title-sm text-on-surface font-semibold">
+              Email liên hệ / Hóa đơn điện tử
+            </label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-[20px] text-secondary">mail</span>
+<input class="w-full h-11 pl-11 pr-4 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" type="email" value="contact@tiemtraanyen.vn"/>
+</div>
+</div>
+<!-- Giờ mở cửa -->
+<div class="flex flex-col gap-1.5">
+<label class="font-title-sm text-title-sm text-on-surface font-semibold">
+              Giờ mở cửa hoạt động
+            </label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-[20px] text-secondary">schedule</span>
+<input class="w-full h-11 pl-11 pr-4 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" type="text" value="07:30 - 22:30 hàng ngày"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==========================================
+         THẺ 2: NỘI DUNG TRÊN HÓA ĐƠN (BILL)
+         ========================================== -->
+<section class="rounded-2xl bg-surface-container-lowest shadow-[0_4px_20px_rgba(62,39,35,0.06)] p-6 lg:p-8 flex flex-col gap-6">
+<!-- Header Thẻ -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 bg-surface-container-lowest">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-xl bg-surface-container-high flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[24px]">receipt_long</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">2. Nội dung trên hóa đơn (Bill)</h2>
+<p class="font-body-sm text-body-sm text-secondary">Tùy biến lời nhắn tri ân, thông tin phụ và bản xem trước in nhiệt mô phỏng 80mm</p>
+</div>
+</div>
+<button class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-primary-container text-on-primary font-title-sm text-title-sm hover:bg-primary transition-colors shadow-sm self-start sm:self-auto" onclick="showToastNotification('Đã lưu cấu hình bill in!')">
+<span class="material-symbols-outlined text-[18px]">check</span>
+<span>Lưu cấu hình bill</span>
+</button>
+</div>
+<!-- Bố cục 2 Cột bên trong Thẻ 2 -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- CỘT TRÁI: Form nhập liệu cấu hình bill -->
+<div class="lg:col-span-7 flex flex-col gap-5">
+<!-- Lời cảm ơn đầu bill -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-title-sm text-title-sm text-on-surface font-semibold">Lời cảm ơn đầu bill</label>
+<span class="font-body-sm text-body-sm text-secondary">Tối đa 120 ký tự</span>
+</div>
+<textarea class="w-full p-3.5 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" id="billHeaderInput" oninput="updateBillPreview()" rows="2">Cảm ơn quý khách đã ghé Tiệm Trà An Yên! Chúc bạn một ngày an yên và tràn đầy năng lượng.</textarea>
+</div>
+<!-- Ghi chú chân bill -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-title-sm text-title-sm text-on-surface font-semibold">Ghi chú / Chân bill (Footer)</label>
+<span class="font-body-sm text-body-sm text-secondary">Hiển thị dưới cùng hóa đơn</span>
+</div>
+<textarea class="w-full p-3.5 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" id="billFooterInput" oninput="updateBillPreview()" rows="3">Mọi góp ý về chất lượng phục vụ xin gọi hotline: 0903 123 456. Hẹn gặp lại quý khách! Wifi: AnYenTea_Guest / Pass: anquanyen2026</textarea>
+</div>
+<!-- Các tùy chọn hiển thị trên hóa đơn -->
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col gap-3">
+<span class="font-label-md text-label-md uppercase font-bold text-secondary tracking-wider">Tùy chọn hiển thị bổ sung</span>
+<label class="flex items-center gap-3 cursor-pointer select-none">
+<input checked="" class="w-4 h-4 rounded text-primary accent-[#7B4A2D] cursor-pointer" id="checkQR" onchange="toggleBillElement('billQRContainer', this.checked)" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface">In mã QR tra cứu hóa đơn điện tử</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer select-none">
+<input checked="" class="w-4 h-4 rounded text-primary accent-[#7B4A2D] cursor-pointer" id="checkCashier" onchange="toggleBillElement('billCashierRow', this.checked)" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface">In tên thu ngân phụ trách ca</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer select-none">
+<input checked="" class="w-4 h-4 rounded text-primary accent-[#7B4A2D] cursor-pointer" id="checkWifi" onchange="toggleBillElement('billWifiSection', this.checked)" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface">In mật khẩu Wifi quán trên bill</span>
+</label>
+</div>
+<!-- Mẹo vận hành -->
+<div class="flex items-start gap-3 p-3.5 rounded-xl bg-surface-container-high/50 text-secondary">
+<span class="material-symbols-outlined text-[20px] text-primary mt-0.5">tips_and_updates</span>
+<span class="font-body-sm text-body-sm">
+              Định dạng hóa đơn tự động tối ưu tương thích với khổ giấy in nhiệt K80 (80mm) và K57 (57mm) trên máy in POS quầy bar.
+            </span>
+</div>
+</div>
+<!-- CỘT PHẢI: Bản xem trước Bill in nhiệt thu nhỏ 80mm -->
+<div class="lg:col-span-5 flex flex-col items-center">
+<div class="w-full flex items-center justify-between mb-3 px-1">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-secondary">Mô phỏng máy in nhiệt K80</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+              Live Preview
+            </span>
+</div>
+<!-- Hóa đơn giấy nhiệt mô phỏng -->
+<div class="w-full max-w-[340px] bg-[#FFFFFF] shadow-[0_8px_30px_rgba(62,39,35,0.12)] rounded-t-xl rounded-b-sm p-6 relative flex flex-col text-on-surface overflow-hidden">
+<!-- Mép răng cưa giả lập đỉnh hóa đơn -->
+<div class="absolute top-0 left-0 right-0 h-1.5 flex justify-between overflow-hidden opacity-30">
+<div class="w-full h-full bg-repeating-linear bg-[radial-gradient(#7B4A2D_1px,transparent_1px)] [background-size:6px_6px]"></div>
+</div>
+<!-- Header Hóa đơn -->
+<div class="flex flex-col items-center text-center pb-4 mb-3 border-b-2 border-dashed border-outline-variant/40">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary mb-2 shadow-inner">
+<span class="material-symbols-outlined text-[26px]">local_cafe</span>
+</div>
+<h3 class="font-title-md text-title-md font-bold tracking-tight uppercase">TIỆM TRÀ AN YÊN</h3>
+<p class="font-body-sm text-body-sm text-secondary">18 Thảo Điền, TP. Thủ Đức, TP. HCM</p>
+<p class="font-body-sm text-body-sm text-secondary">Hotline: 0903 123 456</p>
+<!-- Lời cảm ơn live preview -->
+<p class="font-body-sm text-body-sm italic text-primary mt-2 px-2" id="previewBillHeader">
+                "Cảm ơn quý khách đã ghé Tiệm Trà An Yên! Chúc bạn một ngày an yên và tràn đầy năng lượng."
+              </p>
+</div>
+<!-- Metadata Hóa đơn -->
+<div class="flex flex-col gap-1 pb-3 mb-3 text-body-sm font-body-sm border-b-2 border-dashed border-outline-variant/40">
+<div class="flex justify-between">
+<span class="text-secondary">Hóa đơn:</span>
+<span class="font-semibold">#AY-2026-0891</span>
+</div>
+<div class="flex justify-between">
+<span class="text-secondary">Thời gian:</span>
+<span>28/10/2026 14:45</span>
+</div>
+<div class="flex justify-between">
+<span class="text-secondary">Bàn:</span>
+<span class="font-bold text-primary">BÀN 04 (Khu Vườn Yên)</span>
+</div>
+<div class="flex justify-between" id="billCashierRow">
+<span class="text-secondary">Thu ngân:</span>
+<span>Thu Thảo (Ca 1)</span>
+</div>
+</div>
+<!-- Danh sách món mẫu -->
+<div class="flex flex-col gap-2 pb-3 mb-3 border-b-2 border-dashed border-outline-variant/40">
+<div class="flex justify-between font-label-sm text-label-sm uppercase text-secondary font-bold">
+<span>Mặt hàng</span>
+<span>T.Tiền</span>
+</div>
+<div class="flex justify-between items-start font-body-sm text-body-sm">
+<div class="flex flex-col">
+<span class="font-semibold">Trà Sữa Trân Châu Đ.Đen</span>
+<span class="text-secondary text-[11px]">Size L • 50% Đường • 70% Đá</span>
+</div>
+<span class="font-semibold">65.000đ</span>
+</div>
+<div class="flex justify-between items-start font-body-sm text-body-sm">
+<div class="flex flex-col">
+<span class="font-semibold">Trà Oolong Sen Vàng</span>
+<span class="text-secondary text-[11px]">Size M • 70% Đá • Hạt sen dẻo</span>
+</div>
+<span class="font-semibold">48.000đ</span>
+</div>
+<div class="flex justify-between items-start font-body-sm text-body-sm">
+<div class="flex flex-col">
+<span class="font-semibold">Kem Cheese Trà Xanh (Thêm)</span>
+</div>
+<span class="font-semibold">12.000đ</span>
+</div>
+</div>
+<!-- Tổng cộng tiền -->
+<div class="flex flex-col gap-1.5 pb-4 mb-3 border-b-2 border-dashed border-outline-variant/40">
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-secondary">Tạm tính:</span>
+<span>125.000đ</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm">
+<span class="text-secondary">Giảm giá (Ưu đãi giờ vàng):</span>
+<span class="text-error">-0đ</span>
+</div>
+<div class="flex justify-between items-baseline pt-1">
+<span class="font-title-sm text-title-sm font-bold uppercase">TỔNG CỘNG:</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">125.000đ</span>
+</div>
+<div class="flex justify-between font-body-sm text-body-sm text-secondary">
+<span>Hình thức:</span>
+<span class="font-medium text-on-surface">Chuyển khoản VietQR</span>
+</div>
+</div>
+<!-- Chân bill & Wifi -->
+<div class="flex flex-col items-center text-center gap-2">
+<p class="font-body-sm text-body-sm text-secondary" id="previewBillFooter">
+                Mọi góp ý về chất lượng phục vụ xin gọi hotline: 0903 123 456. Hẹn gặp lại quý khách!
+              </p>
+<div class="p-2 rounded-lg bg-surface-container-low w-full flex items-center justify-center gap-2 font-body-sm text-body-sm" id="billWifiSection">
+<span class="material-symbols-outlined text-[16px] text-primary">wifi</span>
+<span>Wifi: <b>AnYenTea_Guest</b> / Pass: <b>anquanyen2026</b></span>
+</div>
+<!-- QR Tra cứu bill mini -->
+<div class="flex flex-col items-center mt-2" id="billQRContainer">
+<div class="w-20 h-20 p-1.5 rounded-lg bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[54px] text-on-surface">qr_code_2</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary mt-1">Quét tra cứu hóa đơn điện tử</span>
+</div>
+</div>
+<!-- Mép răng cưa chân hóa đơn in nhiệt -->
+<div class="mt-4 -mb-6 -mx-6 h-3 bg-surface-container-low flex justify-between overflow-hidden">
+<div class="w-full h-full bg-repeat-x [background-image:linear-gradient(135deg,#ffffff_25%,transparent_25%),linear-gradient(225deg,#ffffff_25%,transparent_25%)] [background-size:12px_12px]"></div>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-secondary mt-4 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">sync</span>
+            Bản xem trước tự động cập nhật theo nội dung nhập bên trái
+          </span>
+</div>
+</div>
+</section>
+<!-- ==========================================
+         THẺ 3: TÀI KHOẢN NHẬN TIỀN & MÃ QR MẶC ĐỊNH
+         ========================================== -->
+<section class="rounded-2xl bg-surface-container-lowest shadow-[0_4px_20px_rgba(62,39,35,0.06)] p-6 lg:p-8 flex flex-col gap-6">
+<!-- Header Thẻ -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 bg-surface-container-lowest">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-xl bg-surface-container-high flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[24px]">account_balance</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">3. Tài khoản nhận tiền &amp; Mã QR mặc định</h2>
+<p class="font-body-sm text-body-sm text-secondary">Tài khoản ngân hàng của quán phục vụ khách chuyển khoản nhanh tại quầy &amp; tại bàn</p>
+</div>
+</div>
+<button class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-primary-container text-on-primary font-title-sm text-title-sm hover:bg-primary transition-colors shadow-sm self-start sm:self-auto" onclick="showToastNotification('Đã lưu thông tin tài khoản &amp; QR ngân hàng!')">
+<span class="material-symbols-outlined text-[18px]">check</span>
+<span>Lưu tài khoản &amp; QR</span>
+</button>
+</div>
+<!-- CẢNH BÁO QUY CHUẨN VẬN HÀNH (Vàng Caramel) -->
+<div class="p-4 rounded-xl bg-[#FEF3E2] text-on-surface flex items-start gap-3.5 shadow-sm">
+<div class="w-8 h-8 rounded-lg bg-[#E6B566]/30 text-[#735000] flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[22px]">lightbulb</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-[#735000] font-bold">Lưu ý vận hành quan trọng:</span>
+<p class="font-body-md text-body-md text-on-surface mt-0.5 leading-relaxed">
+            Đây là mã QR thanh toán cố định của quán. Khách hàng sẽ quét mã và tự nhập số tiền thanh toán; nhân viên thu ngân có trách nhiệm kiểm tra thông báo biến động số dư trên app ngân hàng trước khi xác nhận đơn và giao nước.
+          </p>
+</div>
+</div>
+<!-- Lưới nội dung Thẻ 3: Form tài khoản & Khung QR -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Form cấu hình tài khoản (Trái) -->
+<div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Ngân hàng thụ hưởng -->
+<div class="md:col-span-2 flex flex-col gap-1.5">
+<label class="font-title-sm text-title-sm text-on-surface font-semibold flex items-center gap-1">
+              Ngân hàng thụ hưởng <span class="text-error">*</span>
+</label>
+<div class="relative flex items-center">
+<div class="absolute left-3 w-6 h-6 rounded bg-primary-container/10 flex items-center justify-center text-primary text-[11px] font-bold">
+                MB
+              </div>
+<select class="w-full h-11 pl-12 pr-10 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md appearance-none focus:outline-none focus:ring-2 focus:ring-primary-container transition-all cursor-pointer">
+<option selected="" value="mbbank">MB Bank (Ngân hàng TMCP Quân Đội)</option>
+<option value="vietcombank">Vietcombank (Ngoại thương Việt Nam)</option>
+<option value="techcombank">Techcombank (Kỹ Thương Việt Nam)</option>
+<option value="acb">ACB (Á Châu)</option>
+<option value="vpbank">VPBank (Việt Nam Thịnh Vượng)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 text-[20px] text-secondary pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Số tài khoản -->
+<div class="md:col-span-2 flex flex-col gap-1.5">
+<label class="font-title-sm text-title-sm text-on-surface font-semibold flex items-center gap-1">
+              Số tài khoản ngân hàng <span class="text-error">*</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-[20px] text-secondary">credit_card</span>
+<input class="w-full h-11 pl-11 pr-24 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md font-mono tracking-wider focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" id="bankAccNo" type="text" value="9876543210"/>
+<button class="absolute right-2 px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-all flex items-center gap-1" onclick="copyAccountNo()">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+<span id="copyBtnText">Sao chép</span>
+</button>
+</div>
+</div>
+<!-- Tên chủ tài khoản -->
+<div class="md:col-span-2 flex flex-col gap-1.5">
+<label class="font-title-sm text-title-sm text-on-surface font-semibold flex items-center gap-1">
+              Tên chủ tài khoản <span class="text-error">*</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-[20px] text-secondary">person</span>
+<input class="w-full h-11 pl-11 pr-4 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md uppercase font-semibold focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" oninput="this.value = this.value.toUpperCase()" type="text" value="NGUYEN AN YEN"/>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">Tên viết hoa không dấu trùng khớp hồ sơ mở thẻ ngân hàng</span>
+</div>
+<!-- Cú pháp nội dung chuyển khoản gợi ý -->
+<div class="md:col-span-2 flex flex-col gap-1.5">
+<label class="font-title-sm text-title-sm text-on-surface font-semibold">
+              Cú pháp nội dung chuyển khoản gợi ý
+            </label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-[20px] text-secondary">edit_note</span>
+<input class="w-full h-11 pl-11 pr-4 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" type="text" value="BAN [Số bàn] - [Mã đơn]"/>
+</div>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-label-sm text-label-sm text-secondary">Ví dụ hiển thị:</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-mono font-bold text-label-sm">BAN 05 HD0127</span>
+</div>
+</div>
+</div>
+<!-- Khu vực Tải ảnh mã QR tài khoản (Phải) -->
+<div class="lg:col-span-5 flex flex-col items-center p-6 rounded-2xl bg-surface-container-low text-center">
+<div class="flex items-center justify-between w-full mb-4">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Mã QR VietQR của quán</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm" id="qrStatusBadge">
+              Đang hoạt động
+            </span>
+</div>
+<!-- KHUNG TẢI / XEM TRƯỚC QR (Biến thiên theo Scenario) -->
+<div class="relative w-56 h-56 rounded-2xl bg-surface-container-lowest p-3 shadow-md flex items-center justify-center mb-4 transition-all overflow-hidden" id="qrPreviewBox">
+<!-- 1. Trạng thái có ảnh QR đầy đủ -->
+<div class="w-full h-full rounded-xl overflow-hidden flex items-center justify-center relative bg-surface-container-lowest" id="qrImageState">
+<img class="w-full h-full object-contain" data-alt="High quality VietQR official banking QR code card on clean white background, framed with subtle soft caramel accents, ready for instant customer scanning" id="qrMainImg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBX84njfK_J4RV-e1kkcME2oWzUc6jITb1THhGxOnvdSKX2Co2kNu_Q2_Jg4ZjDG0Tnhi4eGK-kBbxiO7tZRQ9nH42vY2cxs-DeSSpW327VqpkNfZECjYQl_6mKq44e0i4x_UZJrg1qdhaYyXFVi3g8o6arDs_ouTzDNhzFIq9msTtBtfkm86wv4n9Hoz_UHEW9zYqG-b_OQHrr7lObZjlDFOHf8FmFGVqsJEfnih_"/>
+<!-- Logo MB Bank nhỏ ở tâm QR -->
+<div class="absolute w-8 h-8 rounded-lg bg-surface-container-lowest p-1 shadow-md flex items-center justify-center pointer-events-none">
+<span class="material-symbols-outlined text-primary text-[20px]">qr_code_scanner</span>
+</div>
+</div>
+<!-- 2. Trạng thái rỗng (Chưa tải QR) -->
+<div class="hidden w-full h-full rounded-xl bg-surface-container-high/40 flex-col items-center justify-center p-4 text-center" id="qrEmptyState">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-secondary mb-2">
+<span class="material-symbols-outlined text-[28px]">qr_code_2</span>
+</div>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Chưa có mã QR</span>
+<span class="font-body-sm text-body-sm text-secondary mt-1">Vui lòng tải ảnh VietQR ngân hàng của bạn</span>
+</div>
+<!-- 3. Trạng thái Báo Lỗi File -->
+<div class="hidden absolute inset-0 bg-error-container/30 rounded-2xl flex flex-col items-center justify-center p-4 text-center backdrop-blur-xs" id="qrErrorState">
+<div class="w-11 h-11 rounded-full bg-error text-on-error flex items-center justify-center mb-2 shadow-md">
+<span class="material-symbols-outlined text-[24px]">error</span>
+</div>
+<span class="font-title-sm text-title-sm text-error font-bold">Tải tệp thất bại!</span>
+<p class="font-body-sm text-body-sm text-error mt-1 px-2 font-medium">
+                Tệp tải lên không hợp lệ hoặc vượt quá dung lượng 2MB
+              </p>
+</div>
+</div>
+<!-- Thông báo nhắc nhở cảnh báo kịch bản 2 & 3 -->
+<div class="hidden w-full p-3 rounded-xl mb-4 text-left font-body-sm text-body-sm" id="qrScenarioAlert"></div>
+<!-- Cụm nút thao tác QR -->
+<div class="flex flex-wrap items-center justify-center gap-2 mb-3">
+<button class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-primary text-on-primary font-title-sm text-title-sm hover:bg-primary-container transition-all shadow-sm" onclick="triggerUploadMock()">
+<span class="material-symbols-outlined text-[18px]">upload</span>
+<span>Tải mã QR mới</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-surface-container-high text-on-surface font-title-sm text-title-sm hover:bg-surface-container transition-all" id="btnZoomQr" onclick="openQrModal()">
+<span class="material-symbols-outlined text-[18px]">zoom_in</span>
+<span>Xem phóng to</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-surface-container text-error font-title-sm text-title-sm hover:bg-error-container transition-all" id="btnDeleteQr" onclick="clearQrMock()">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+<span>Xóa mã QR</span>
+</button>
+</div>
+<!-- Ghi chú định dạng -->
+<p class="font-body-sm text-body-sm text-secondary max-w-xs">
+            Tải ảnh chụp màn hình mã VietQR từ App ngân hàng của bạn. Hỗ trợ định dạng JPG, PNG, tối đa 2MB.
+          </p>
+</div>
+</div>
+</section>
+</div>
+<!-- MODAL XEM PHÓNG TO MÃ QR (Ẩn mặc định) -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-inverse-surface/60 backdrop-blur-sm" id="modalZoomQr">
+<div class="relative w-full max-w-md rounded-2xl bg-surface-container-lowest p-6 shadow-2xl flex flex-col items-center">
+<div class="flex items-center justify-between w-full mb-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">qr_code_2</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">Mã QR Thanh Toán MB Bank</span>
+</div>
+<button class="w-8 h-8 rounded-lg flex items-center justify-center text-secondary hover:bg-surface-container transition-colors" onclick="closeQrModal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="w-72 h-72 rounded-2xl bg-surface-container-low p-4 flex items-center justify-center shadow-inner mb-4">
+<img class="w-full h-full object-contain rounded-xl" data-alt="High resolution detailed VietQR code showing official banking logo, account number and recipient Nguyen An Yen in warm artisan tea salon branding" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfVA8W4y_i4Q9V1dZgd_7rbW3yYlbiQb4fhDtvd0RGRejoNg_s4zNkn53ZIUke0xCjimrLwN3LTC3pji-SjZ3zqCVzoYiDNBqYuhurNC5kEHXa23D2hraZOlCZEhGHFleum63Dms1fV1Mp5Yl0czAJyi0I6t3r4tyDTTEadiNc4ABdU3kBJK2ubBv0hOJJTBsZsNiznjoSOZEOX_JFBGIHgLCWLGC8hbcaetcnNT42"/>
+</div>
+<div class="w-full p-3 rounded-xl bg-surface-container flex flex-col gap-1 text-center mb-5">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold">Chủ tài khoản: NGUYEN AN YEN</span>
+<span class="font-mono text-title-md font-bold text-primary">STK: 9876543210</span>
+<span class="font-body-sm text-body-sm text-secondary">Ngân hàng TMCP Quân Đội (MB Bank)</span>
+</div>
+<div class="flex items-center gap-3 w-full">
+<button class="w-full py-2.5 rounded-xl bg-primary text-on-primary font-title-sm text-title-sm hover:bg-primary-container transition-colors" onclick="closeQrModal()">
+          Đóng cửa sổ
+        </button>
+</div>
+</div>
+</div>
+<!-- JAVASCRIPT ĐIỀU KHIỂN LOGIC & KỊCH BẢN KIỂM THỬ -->
+<script>
+    // Cập nhật xem trước Bill in nhiệt
+    function updateBillPreview() {
+      const headerVal = document.getElementById('billHeaderInput').value;
+      const footerVal = document.getElementById('billFooterInput').value;
+      document.getElementById('previewBillHeader').innerText = headerVal ? `"${headerVal}"` : '';
+      document.getElementById('previewBillFooter').innerText = footerVal;
+    }
+
+    // Bật/tắt các thành phần trên Bill mô phỏng
+    function toggleBillElement(elementId, isVisible) {
+      const el = document.getElementById(elementId);
+      if (el) {
+        if (isVisible) {
+          el.classList.remove('hidden');
+        } else {
+          el.classList.add('hidden');
+        }
+      }
+    }
+
+    // Sao chép số tài khoản
+    function copyAccountNo() {
+      const accNo = document.getElementById('bankAccNo').value;
+      navigator.clipboard?.writeText(accNo);
+      const btn = document.getElementById('copyBtnText');
+      btn.innerText = 'Đã chép!';
+      setTimeout(() => {
+        btn.innerText = 'Sao chép';
+      }, 2000);
+    }
+
+    // Modal phóng to QR
+    function openQrModal() {
+      document.getElementById('modalZoomQr').classList.remove('hidden');
+    }
+    function closeQrModal() {
+      document.getElementById('modalZoomQr').classList.add('hidden');
+    }
+
+    // Hiển thị Toast thông báo
+    function showToastNotification(message) {
+      const toast = document.getElementById('toastSuccess');
+      if (message) {
+        toast.querySelector('.font-title-sm').innerText = message;
+      }
+      toast.classList.remove('hidden');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      setTimeout(() => {
+        hideToast();
+      }, 5000);
+    }
+
+    function hideToast() {
+      document.getElementById('toastSuccess').classList.add('hidden');
+    }
+
+    function triggerGlobalSave() {
+      setScenario(4);
+    }
+
+    // Xóa/tải thử QR
+    function clearQrMock() {
+      setScenario(2);
+    }
+    function triggerUploadMock() {
+      setScenario(1);
+    }
+
+    // Bộ chuyển đổi 4 kịch bản kiểm thử (Scenario Switcher)
+    function setScenario(scenarioNumber) {
+      // 1. Reset trạng thái style của 4 nút Scenario
+      for (let i = 1; i <= 4; i++) {
+        const btn = document.getElementById('btnScenario' + i);
+        if (btn) {
+          btn.className = 'scenario-btn flex items-center gap-2 px-3.5 py-2.5 rounded-xl font-title-sm text-title-sm transition-all text-left bg-surface-container-low text-on-surface hover:bg-surface-container-high';
+        }
+      }
+
+      // Highlight nút đang chọn
+      const activeBtn = document.getElementById('btnScenario' + scenarioNumber);
+      if (activeBtn) {
+        activeBtn.className = 'scenario-btn flex items-center gap-2 px-3.5 py-2.5 rounded-xl font-title-sm text-title-sm transition-all text-left bg-primary-container text-on-primary shadow-sm';
+      }
+
+      // DOM Elements cần tương tác trong thẻ 3
+      const imgState = document.getElementById('qrImageState');
+      const emptyState = document.getElementById('qrEmptyState');
+      const errorState = document.getElementById('qrErrorState');
+      const previewBox = document.getElementById('qrPreviewBox');
+      const alertBox = document.getElementById('qrScenarioAlert');
+      const badge = document.getElementById('qrStatusBadge');
+      const btnZoom = document.getElementById('btnZoomQr');
+      const btnDel = document.getElementById('btnDeleteQr');
+
+      // Tắt toast mặc định nếu không phải kịch bản 4
+      if (scenarioNumber !== 4) {
+        hideToast();
+      }
+
+      if (scenarioNumber === 1) {
+        // KỊCH BẢN 1: Mặc định (Đã có đầy đủ thông tin & QR)
+        imgState.classList.remove('hidden');
+        emptyState.classList.add('hidden');
+        errorState.classList.add('hidden');
+        alertBox.classList.add('hidden');
+        previewBox.className = 'relative w-56 h-56 rounded-2xl bg-surface-container-lowest p-3 shadow-md flex items-center justify-center mb-4 transition-all overflow-hidden';
+        badge.innerText = 'Đang hoạt động';
+        badge.className = 'px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm';
+        btnZoom.removeAttribute('disabled');
+        btnDel.removeAttribute('disabled');
+      } else if (scenarioNumber === 2) {
+        // KỊCH BẢN 2: Trạng thái chưa tải QR ngân hàng
+        imgState.classList.add('hidden');
+        emptyState.classList.remove('hidden');
+        emptyState.classList.add('flex');
+        errorState.classList.add('hidden');
+        previewBox.className = 'relative w-56 h-56 rounded-2xl bg-surface-container-low p-3 shadow-inner flex items-center justify-center mb-4 transition-all overflow-hidden';
+        badge.innerText = 'Chưa thiết lập';
+        badge.className = 'px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm';
+
+        // Cảnh báo nhắc nhở
+        alertBox.className = 'w-full p-3.5 rounded-xl mb-4 text-left font-body-sm text-body-sm bg-[#FEF3E2] text-on-surface flex items-center gap-2';
+        alertBox.innerHTML = '<span class="material-symbols-outlined text-[18px] text-[#735000]">error_outline</span> <span>Quán chưa thể nhận thanh toán quét mã QR. Vui lòng tải ảnh VietQR.</span>';
+        alertBox.classList.remove('hidden');
+
+        btnZoom.setAttribute('disabled', 'true');
+        btnDel.setAttribute('disabled', 'true');
+      } else if (scenarioNumber === 3) {
+        // KỊCH BẢN 3: Báo lỗi ảnh sai định dạng / quá dung lượng
+        imgState.classList.remove('hidden');
+        emptyState.classList.add('hidden');
+        errorState.classList.remove('hidden');
+        previewBox.className = 'relative w-56 h-56 rounded-2xl bg-surface-container-lowest p-3 shadow-md flex items-center justify-center mb-4 transition-all overflow-hidden ring-2 ring-error';
+        badge.innerText = 'Lỗi tải tệp';
+        badge.className = 'px-2.5 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold';
+
+        // Cảnh báo nhắc nhở màu đỏ
+        alertBox.className = 'w-full p-3.5 rounded-xl mb-4 text-left font-body-sm text-body-sm bg-error-container text-on-error-container flex items-center gap-2';
+        alertBox.innerHTML = '<span class="material-symbols-outlined text-[18px] text-error">warning</span> <span>Tệp tải lên không hợp lệ hoặc vượt quá 2MB. Vui lòng chọn tệp .PNG hoặc .JPG khác.</span>';
+        alertBox.classList.remove('hidden');
+      } else if (scenarioNumber === 4) {
+        // KỊCH BẢN 4: Lưu thành công (Toast notification)
+        setScenario(1);
+        showToastNotification('Cập nhật cấu hình quán và tài khoản thành công!');
+      }
+    }
+  </script>
+</div></main></div><script src="js/config.js"></script><script src="js/api.js"></script><script src="js/nav.js"></script><script src="js/notice.js"></script></body></html>

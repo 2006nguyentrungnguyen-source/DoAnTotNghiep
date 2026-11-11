@@ -1,0 +1,661 @@
+<!DOCTYPE html><html lang="vi"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-dim":"#f0d5c5","on-secondary-fixed-variant":"#5b403c","surface-container-low":"#fff1ea","inverse-primary":"#fab893","inverse-on-surface":"#ffede4","outline-variant":"#d6c3b9","inverse-surface":"#3d2d22","surface-container-high":"#ffe3d2","secondary-fixed-dim":"#e3beb8","primary-fixed-dim":"#fab893","surface-container-highest":"#f9ddcd","on-tertiary-fixed":"#271900","on-secondary-container":"#795c57","outline":"#84746c","surface-tint":"#855234","tertiary-fixed-dim":"#f5bd58","tertiary-fixed":"#ffdeaa","surface":"#fff8f5","on-surface-variant":"#52443d","on-error":"#ffffff","on-primary":"#ffffff","on-primary-container":"#ffbd99","error":"#ba1a1a","primary":"#5f3318","surface-bright":"#fff8f5","on-background":"#27180f","secondary":"#745853","surface-variant":"#f9ddcd","on-primary-fixed-variant":"#693b1f","on-secondary":"#ffffff","background":"#fff8f5","tertiary":"#553a00","primary-container":"#7b4a2d","surface-container-lowest":"#ffffff","surface-container":"#ffeade","tertiary-container":"#735000","on-primary-fixed":"#331200","on-error-container":"#93000a","on-secondary-fixed":"#2b1613","on-tertiary-fixed-variant":"#5f4100","secondary-container":"#fed7d0","error-container":"#ffdad6","secondary-fixed":"#ffdad4","on-tertiary":"#ffffff","on-surface":"#27180f","primary-fixed":"#ffdbc9","on-tertiary-container":"#fcc35d"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter":"0.75rem","space-sm":"0.5rem","space-xl":"1.5rem","space-xs":"0.25rem","space-md":"0.75rem","space-lg":"1rem","margin":"1rem"},"fontFamily":{"headline-lg":["Be Vietnam Pro"],"title-md":["Be Vietnam Pro"],"headline-md":["Be Vietnam Pro"],"body-md":["Be Vietnam Pro"],"title-sm":["Be Vietnam Pro"],"label-sm":["Be Vietnam Pro"],"label-lg":["Be Vietnam Pro"],"body-sm":["Be Vietnam Pro"],"body-lg":["Be Vietnam Pro"],"headline-sm":["Be Vietnam Pro"],"label-md":["Be Vietnam Pro"]},"fontSize":{"headline-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}],"title-md":["16px",{"lineHeight":"22px","fontWeight":"600"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"21px","fontWeight":"400"}],"title-sm":["14px",{"lineHeight":"20px","fontWeight":"600"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"17px","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"26px","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-inverse-surface z-50 flex flex-col justify-between shadow-[0_4px_24px_rgba(62,39,35,0.25)]"><div class="flex flex-col"><div class="h-20 px-space-xl flex items-center gap-space-md"><div class="w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center text-primary-fixed"><span class="material-symbols-outlined text-[24px]">local_cafe</span></div><div class="flex flex-col"><span class="font-title-sm text-title-sm text-surface tracking-tight">Tiệm Trà An Yên</span><span class="font-label-sm text-label-sm text-outline-variant uppercase tracking-wider">Cổng Quản Trị POS</span></div></div><div class="px-space-md py-space-sm"><div class="bg-on-background/30 rounded-xl px-space-md py-space-sm flex items-center justify-between mb-space-sm"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-tertiary-fixed text-[18px]">storefront</span><span class="font-label-md text-label-md text-surface">Chi nhánh Thảo Điền</span></div><span class="w-2 h-2 rounded-full bg-tertiary-fixed"></span></div></div><nav class="px-space-md flex flex-col gap-space-xs mt-space-xs" data-active-classes="bg-primary-container text-surface font-title-sm shadow-[0_2px_8px_rgba(43,27,20,0.4)]"><a class="flex items-center px-space-md py-space-sm rounded-xl text-outline-variant hover:bg-on-background/20 hover:text-surface transition-all font-title-sm text-title-sm" data-path="don-hang" href="#">Đơn hàng</a>
+<a class="flex items-center px-space-md py-space-sm rounded-xl text-outline-variant hover:bg-on-background/20 hover:text-surface transition-all font-title-sm text-title-sm" data-path="goi-mon-tai-quay" href="#">Gọi món tại quầy</a>
+<a class="flex items-center px-space-md py-space-sm rounded-xl text-outline-variant hover:bg-on-background/20 hover:text-surface transition-all font-title-sm text-title-sm" data-path="thanh-toan" href="#">Thanh toán</a>
+<a class="flex items-center px-space-md py-space-sm rounded-xl text-outline-variant hover:bg-on-background/20 hover:text-surface transition-all font-title-sm text-title-sm" data-path="het-mon" href="#">Hết món</a>
+<a class="flex items-center px-space-md py-space-sm rounded-xl text-outline-variant hover:bg-on-background/20 hover:text-surface transition-all font-title-sm text-title-sm" data-path="ban" href="#">Bàn</a>
+<a class="flex items-center px-space-md py-space-sm rounded-xl bg-primary-container text-surface font-title-sm text-title-sm shadow-[0_2px_8px_rgba(43,27,20,0.4)] transition-all" data-path="chot-ca" href="#">Chốt ca</a>
+<a class="flex items-center px-space-md py-space-sm rounded-xl text-outline-variant hover:bg-on-background/20 hover:text-surface transition-all font-title-sm text-title-sm" data-path="lich-su" href="#">Lịch sử</a></nav></div><div class="p-space-md m-space-md rounded-xl bg-on-background/20"><div class="flex items-center gap-space-md"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col min-w-0 flex-1"><span class="font-label-lg text-label-lg text-surface truncate">Nguyễn An Yên</span><span class="font-label-sm text-label-sm text-outline-variant truncate">Thu ngân • Ca sáng</span></div><button class="text-outline-variant hover:text-surface transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">logout</span></button></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-20 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(62,39,35,0.06)] z-40 px-space-xl flex items-center justify-between"><div class="flex items-center gap-space-md"><nav class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant"><span class="material-symbols-outlined text-[16px]">home</span><span class="">/</span><span class="text-on-surface font-title-sm text-title-sm">Cửa hàng Thảo Điền</span><span class="">/</span><span class="text-on-surface-variant font-title-sm text-title-sm">Thu ngân &amp; Thanh toán</span><span class="">/</span><span class="text-primary font-title-sm text-title-sm">Thanh toán đơn #A0127</span></nav></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-space-xs rounded-xl"><span class="material-symbols-outlined text-on-surface-variant text-[18px]">schedule</span><span class="font-label-md text-label-md text-on-surface font-semibold">08/11/2026 • 10:58</span></div><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[18px]">search</span><input class="bg-surface-container-low text-on-surface font-body-sm text-body-sm pl-9 pr-space-md py-2 rounded-xl focus:outline-none w-64 placeholder:text-outline-variant" placeholder="Tìm kiếm đơn, bàn, món..." type="text"></div><button class="relative p-2 rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-sm pl-space-sm"><div class="text-right"><p class="font-label-md text-label-md text-on-surface font-semibold">Ca trực #01</p><p class="font-label-sm text-label-sm text-on-surface-variant">Thu ngân: An Yên</p></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-20 bg-surface min-h-screen px-space-xl py-space-xl"><div class="flex flex-col w-full gap-space-xl">
+<!-- Top Bar / Breadcrumb & Status Info -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
+<span class="">Cửa hàng Thảo Điền</span>
+<span class="text-outline-variant">/</span>
+<span class="">Thu ngân &amp; Bán hàng</span>
+<span class="text-outline-variant">/</span>
+<span class="text-primary font-semibold">Chốt ca kiểm quỹ</span>
+</div>
+<div class="flex items-center gap-space-md flex-wrap">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Chốt ca làm việc &amp; Bàn giao sổ quỹ</h1>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-wider font-bold">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+          CA SÁNG · ĐANG HOẠT ĐỘNG
+        </div>
+</div>
+</div>
+<!-- Right Quick Actions -->
+<div class="flex items-center gap-space-sm self-start lg:self-auto">
+<button class="h-11 px-space-md rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface flex items-center gap-space-sm transition-all font-title-sm text-title-sm shadow-sm" onclick="window.print()" type="button">
+<span class="material-symbols-outlined text-[20px]">print</span>
+<span class="">In phiếu chốt ca (F9)</span>
+</button>
+<button class="h-11 px-space-lg rounded-xl bg-primary-container hover:bg-primary text-surface-container-lowest flex items-center gap-space-sm transition-all font-title-sm text-title-sm shadow-md" onclick="openConfirmModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">lock_reset</span>
+<span class="">Xác nhận chốt ca</span>
+</button>
+</div>
+</div>
+<!-- Shift Metadata Bar (Artisanal Card Strip) -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">history_toggle_off</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Khung ca hiện tại</span>
+<span class="font-title-sm text-title-sm text-on-surface font-bold truncate">Ca sáng: 08:00 – 15:00</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ngày 08/11/2026 (6h 58m)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">badge</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Thu ngân phụ trách</span>
+<span class="font-title-sm text-title-sm text-on-surface font-bold truncate">Nguyễn An Yên</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Mã NV: NV-082 · Quầy Bar 01</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-tertiary-container shrink-0">
+<span class="material-symbols-outlined text-[24px]">receipt_long</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Đơn hoàn tất</span>
+<span class="font-title-sm text-title-sm text-on-surface font-bold">42 đơn hàng</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">38 tại quán · 4 mang về</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[24px]">table_bar</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Trạng thái quầy</span>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim"></span>
+<span class="font-title-sm text-title-sm text-on-surface font-bold">1 bàn đang phục vụ</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">0 đơn huỷ / hoàn tiền</span>
+</div>
+</div>
+</div>
+<!-- 3 Business Metric Cards (System Summary) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Card 1: Tổng doanh thu -->
+<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-6 -bottom-6 w-28 h-28 bg-surface-container-high rounded-full opacity-40 pointer-events-none group-hover:scale-110 transition-transform"></div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span class="font-label-lg text-label-lg text-on-surface-variant uppercase tracking-wider font-bold">Tổng doanh thu hệ thống</span>
+</div>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-primary font-label-sm text-label-sm font-semibold">42 giao dịch</span>
+</div>
+<div class="my-space-xs">
+<div class="font-headline-lg text-headline-lg text-primary tracking-tight font-bold">5.480.000<span class="text-title-md font-normal">đ</span></div>
+</div>
+<div class="flex items-center justify-between pt-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<span class="">Đã trừ voucher khuyến mãi</span>
+<span class="font-semibold text-on-surface">100% quyết toán</span>
+</div>
+</div>
+<!-- Card 2: Tiền mặt hệ thống -->
+<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-6 -bottom-6 w-28 h-28 bg-surface-container-highest rounded-full opacity-40 pointer-events-none group-hover:scale-110 transition-transform"></div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="font-label-lg text-label-lg text-on-surface-variant uppercase tracking-wider font-bold">Tiền mặt hệ thống ghi nhận</span>
+</div>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-tertiary-container font-label-sm text-label-sm font-semibold">18 hóa đơn</span>
+</div>
+<div class="my-space-xs">
+<div class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-bold">2.350.000<span class="text-title-md font-normal">đ</span></div>
+</div>
+<div class="flex items-center justify-between pt-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<span class="">Quỹ đầu ca: <strong class="text-on-surface">1.000.000đ</strong></span>
+<span class="font-semibold text-primary">Két: 3.350.000đ</span>
+</div>
+</div>
+<!-- Card 3: Chuyển khoản VietQR -->
+<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-6 -bottom-6 w-28 h-28 bg-surface-container rounded-full opacity-40 pointer-events-none group-hover:scale-110 transition-transform"></div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-label-lg text-label-lg text-on-surface-variant uppercase tracking-wider font-bold">Chuyển khoản hệ thống ghi nhận</span>
+</div>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">24 giao dịch</span>
+</div>
+<div class="my-space-xs">
+<div class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-bold">3.130.000<span class="text-title-md font-normal">đ</span></div>
+</div>
+<div class="flex items-center justify-between pt-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<span class="">VietQR / Napas 247</span>
+<span class="font-semibold text-secondary">Tự động khớp lệnh</span>
+</div>
+</div>
+</div>
+<!-- Side-by-Side Reconciliation (Khối đối soát song song) -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg items-start">
+<!-- BLOCK A: Tiền mặt tại két (Cash Reconciliation) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">payments</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">1. Đối soát tiền mặt tại két</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Kiểm kê quỹ vật lý trong ngăn kéo thu ngân</p>
+</div>
+</div>
+<button class="text-primary hover:text-primary-container font-label-md text-label-md flex items-center gap-1 transition-colors" id="toggleDenomBtn" onclick="toggleDenominations()" type="button">
+<span class="material-symbols-outlined text-[16px]">calculate</span>
+<span id="denomToggleLabel" class="">Đếm theo mệnh giá</span>
+</button>
+</div>
+<!-- Linear Breakdown Rows -->
+<div class="space-y-space-sm bg-surface-container-low p-space-md rounded-xl">
+<div class="flex items-center justify-between text-body-md font-body-md text-on-surface">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">arrow_right</span>
+            Quỹ tiền mặt đầu ca (tiền thối sẵn):
+          </span>
+<span class="font-title-sm text-title-sm font-semibold">1.000.000 đ</span>
+</div>
+<div class="flex items-center justify-between text-body-md font-body-md text-on-surface">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">add_circle</span>
+            Doanh thu tiền mặt trong ca (18 bill):
+          </span>
+<span class="font-title-sm text-title-sm font-semibold text-primary">+ 2.350.000 đ</span>
+</div>
+<div class="flex items-center justify-between text-body-md font-body-md text-on-surface">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">remove_circle</span>
+            Tiền chi khẩn cấp (mua đá/nguyên liệu):
+          </span>
+<span class="font-title-sm text-title-sm font-semibold">0 đ</span>
+</div>
+<div class="pt-space-sm mt-space-sm bg-surface-container-high/60 p-space-sm rounded-lg flex items-center justify-between">
+<span class="font-title-sm text-title-sm text-on-surface font-bold">Lý thuyết phải có trong két:</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold" id="expectedCashVal">3.350.000 đ</span>
+</div>
+</div>
+<!-- Denomination Counter Drawer (Collapsible) -->
+<div class="hidden flex-col gap-space-sm bg-surface-container/40 p-space-md rounded-xl" id="denomDrawer">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-md text-label-md text-on-surface font-bold">Bảng kiểm đếm từng mệnh giá tiền</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tự động cộng dồn</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-sm text-body-sm font-body-sm">
+<div class="bg-surface-container-lowest p-2 rounded-lg flex items-center justify-between shadow-xs">
+<span class="font-semibold text-on-surface">500.000 đ</span>
+<input class="w-14 text-center bg-surface-container rounded py-1 font-bold text-primary focus:outline-none" data-denom="500000" min="0" oninput="calculateDenominations()" type="number" value="4">
+</div>
+<div class="bg-surface-container-lowest p-2 rounded-lg flex items-center justify-between shadow-xs">
+<span class="font-semibold text-on-surface">200.000 đ</span>
+<input class="w-14 text-center bg-surface-container rounded py-1 font-bold text-primary focus:outline-none" data-denom="200000" min="0" oninput="calculateDenominations()" type="number" value="5">
+</div>
+<div class="bg-surface-container-lowest p-2 rounded-lg flex items-center justify-between shadow-xs">
+<span class="font-semibold text-on-surface">100.000 đ</span>
+<input class="w-14 text-center bg-surface-container rounded py-1 font-bold text-primary focus:outline-none" data-denom="100000" min="0" oninput="calculateDenominations()" type="number" value="2">
+</div>
+<div class="bg-surface-container-lowest p-2 rounded-lg flex items-center justify-between shadow-xs">
+<span class="font-semibold text-on-surface">50.000 đ</span>
+<input class="w-14 text-center bg-surface-container rounded py-1 font-bold text-primary focus:outline-none" data-denom="50000" min="0" oninput="calculateDenominations()" type="number" value="2">
+</div>
+<div class="bg-surface-container-lowest p-2 rounded-lg flex items-center justify-between shadow-xs">
+<span class="font-semibold text-on-surface">20.000 đ</span>
+<input class="w-14 text-center bg-surface-container rounded py-1 font-bold text-primary focus:outline-none" data-denom="20000" min="0" oninput="calculateDenominations()" type="number" value="2">
+</div>
+<div class="bg-surface-container-lowest p-2 rounded-lg flex items-center justify-between shadow-xs">
+<span class="font-semibold text-on-surface">10.000 đ</span>
+<input class="w-14 text-center bg-surface-container rounded py-1 font-bold text-primary focus:outline-none" data-denom="10000" min="0" oninput="calculateDenominations()" type="number" value="1">
+</div>
+</div>
+</div>
+<!-- Real Count Input -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-title-sm text-title-sm text-on-surface font-semibold flex items-center justify-between" for="actualCashInput">
+<span class="">Tiền mặt thực tế đếm được trong két:</span>
+<span class="text-outline text-label-sm font-normal">Nhập trực tiếp hoặc qua bảng mệnh giá</span>
+</label>
+<div class="relative flex items-center">
+<input class="w-full h-14 pl-4 pr-16 bg-surface-container-lowest text-primary font-headline-md text-headline-md font-bold rounded-xl shadow-xs focus:outline-none focus:ring-2 focus:ring-primary/40 text-left placeholder:text-outline-variant" id="actualCashInput" onkeyup="formatAndRecalculateCash(this)" type="text" value="3.350.000">
+<span class="absolute right-4 text-on-surface-variant font-title-sm font-semibold pointer-events-none">VNĐ</span>
+</div>
+</div>
+<!-- Cash Discrepancy Status Card -->
+<div class="p-space-md rounded-xl bg-surface-container flex items-center justify-between transition-all" id="cashStatusBox">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary shadow-xs" id="cashStatusIcon">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Chênh lệch tiền mặt</span>
+<span class="font-title-md text-title-md font-bold text-on-surface" id="cashDiffText">0 đ</span>
+</div>
+</div>
+<div class="px-3 py-1 rounded-full bg-surface-container-lowest font-label-md text-label-md font-bold text-primary shadow-xs flex items-center gap-1" id="cashBadge">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+          Khớp quỹ chuẩn 100%
+        </div>
+</div>
+<!-- Simulation Toggle Button (Helper for Demoing Discrepancy states) -->
+<div class="flex items-center justify-end gap-2 text-label-sm font-label-sm text-on-surface-variant">
+<span class="">Thử nghiệm trạng thái:</span>
+<button class="underline hover:text-primary" onclick="setCashSim(3350000)" type="button">Khớp chuẩn</button>
+<span class="">·</span>
+<button class="underline hover:text-error" onclick="setCashSim(3300000)" type="button">Thiếu 50k</button>
+<span class="">·</span>
+<button class="underline hover:text-tertiary" onclick="setCashSim(3400000)" type="button">Thừa 50k</button>
+</div>
+</div>
+<!-- BLOCK B: Chuyển khoản ngân hàng (Bank Transfer Reconciliation) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">account_balance</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">2. Đối soát Chuyển khoản ngân hàng</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Đối chiếu Vietcombank &amp; Cổng Napas VietQR</p>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-secondary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">sync</span>
+          Đã đồng bộ 10:55
+        </span>
+</div>
+<!-- Linear Breakdown Rows -->
+<div class="space-y-space-sm bg-surface-container-low p-space-md rounded-xl">
+<div class="flex items-center justify-between text-body-md font-body-md text-on-surface">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">qr_code_scanner</span>
+            Chuyển khoản POS ghi nhận:
+          </span>
+<span class="font-title-sm text-title-sm font-semibold">3.130.000 đ</span>
+</div>
+<div class="flex items-center justify-between text-body-md font-body-md text-on-surface">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">receipt</span>
+            Số giao dịch mã tự sinh VietQR:
+          </span>
+<span class="font-title-sm text-title-sm font-semibold text-secondary">24 giao dịch</span>
+</div>
+<div class="flex items-center justify-between text-body-md font-body-md text-on-surface">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">credit_card_off</span>
+            Giao dịch chuyển lỗi / treo lệnh:
+          </span>
+<span class="font-title-sm text-title-sm font-semibold">0 đ (0 đơn)</span>
+</div>
+<div class="pt-space-sm mt-space-sm bg-surface-container-high/60 p-space-sm rounded-lg flex items-center justify-between">
+<span class="font-title-sm text-title-sm text-on-surface font-bold">Sao kê ngân hàng lý thuyết:</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">3.130.000 đ</span>
+</div>
+</div>
+<!-- Bank Statement Quick Check Feed (Mini table) -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider font-semibold">Mẫu đối soát tự động gần nhất</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Tất cả 24/24 đã khớp mã đơn</span>
+</div>
+<div class="max-h-28 overflow-y-auto space-y-1.5 p-space-xs rounded-lg bg-surface-container/30">
+<div class="flex items-center justify-between px-space-sm py-1 rounded bg-surface-container-lowest text-body-sm font-body-sm">
+<span class="font-mono text-outline font-semibold">#A0126</span>
+<span class="text-on-surface">Trà Oolong Sữa Nướng x 2</span>
+<span class="font-semibold text-primary">110.000 đ</span>
+<span class="text-secondary font-label-sm font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">check</span>VCB · Khớp
+            </span>
+</div>
+<div class="flex items-center justify-between px-space-sm py-1 rounded bg-surface-container-lowest text-body-sm font-body-sm">
+<span class="font-mono text-outline font-semibold">#A0125</span>
+<span class="text-on-surface">Lục Trà Nhài Mãng Cầu x 1</span>
+<span class="font-semibold text-primary">55.000 đ</span>
+<span class="text-secondary font-label-sm font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">check</span>VCB · Khớp
+            </span>
+</div>
+<div class="flex items-center justify-between px-space-sm py-1 rounded bg-surface-container-lowest text-body-sm font-body-sm">
+<span class="font-mono text-outline font-semibold">#A0124</span>
+<span class="text-on-surface">Trà Sen Vàng Hạnh Nhân x 3</span>
+<span class="font-semibold text-primary">195.000 đ</span>
+<span class="text-secondary font-label-sm font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">check</span>VCB · Khớp
+            </span>
+</div>
+</div>
+</div>
+<!-- Real Count Input -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-title-sm text-title-sm text-on-surface font-semibold flex items-center justify-between" for="actualBankInput">
+<span class="">Tổng chuyển khoản kiểm tra trên App VCB:</span>
+<span class="text-outline text-label-sm font-normal">Sao kê tài khoản quầy thu ngân</span>
+</label>
+<div class="relative flex items-center">
+<input class="w-full h-14 pl-4 pr-16 bg-surface-container-lowest text-on-surface font-headline-md text-headline-md font-bold rounded-xl shadow-xs focus:outline-none focus:ring-2 focus:ring-secondary/40 text-left placeholder:text-outline-variant" id="actualBankInput" onkeyup="formatAndRecalculateBank(this)" type="text" value="3.130.000">
+<span class="absolute right-4 text-on-surface-variant font-title-sm font-semibold pointer-events-none">VNĐ</span>
+</div>
+</div>
+<!-- Bank Transfer Status Box -->
+<div class="p-space-md rounded-xl bg-surface-container flex items-center justify-between transition-all" id="bankStatusBox">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-secondary shadow-xs">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Chênh lệch chuyển khoản</span>
+<span class="font-title-md text-title-md font-bold text-on-surface" id="bankDiffText">0 đ</span>
+</div>
+</div>
+<div class="px-3 py-1 rounded-full bg-surface-container-lowest font-label-md text-label-md font-bold text-secondary shadow-xs flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">done_all</span>
+          Đã đối soát với Napas
+        </div>
+</div>
+</div>
+</div>
+<!-- Bottom Section: Handover Notes & Shift Transfer Control -->
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center gap-space-sm pb-space-xs">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Biên bản bàn giao ca &amp; Ghi chú vận hành</h3>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<!-- Notes Textarea -->
+<div class="lg:col-span-2 flex flex-col gap-space-xs">
+<label class="font-title-sm text-title-sm text-on-surface font-semibold flex items-center justify-between" for="shiftNotes">
+<span class="">Ghi chú giải trình &amp; dặn dò ca sau:</span>
+<span class="text-on-surface-variant font-label-sm">(Bắt buộc nếu có chênh lệch tiền mặt)</span>
+</label>
+<textarea class="w-full p-space-md rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md placeholder:text-outline-variant focus:outline-none focus:ring-2 focus:ring-primary/30" id="shiftNotes" placeholder="Nhập ghi chú bàn giao cho ca chiều (ví dụ: số lượng tiền lẻ mệnh giá nhỏ trong két, tình trạng nguyên liệu trà sen vàng còn ít, bàn số 4 đang phục vụ chốt sau...)" rows="3"></textarea>
+</div>
+<!-- Handover Recipient Dropdown & Checklists -->
+<div class="flex flex-col justify-between gap-space-md bg-surface-container-low p-space-md rounded-xl">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-lg text-label-lg text-on-surface font-bold" for="receiverSelect">Nhân viên nhận bàn giao ca:</label>
+<div class="relative">
+<select class="w-full h-11 px-space-md pr-10 rounded-lg bg-surface-container-lowest text-on-surface font-title-sm text-title-sm font-semibold appearance-none focus:outline-none focus:ring-2 focus:ring-primary/30" id="receiverSelect">
+<option value="tran-minh-quan">Trần Minh Quân (Ca chiều: 15:00 - 22:00)</option>
+<option value="le-hoang-nam">Lê Hoàng Nam (Quản lý cửa hàng)</option>
+<option value="pham-mai-anh">Phạm Mai Anh (Thu ngân dự phòng)</option>
+</select>
+<span class="material-symbols-outlined text-[20px] text-outline pointer-events-none absolute right-3 top-2.5">expand_more</span>
+</div>
+</div>
+<div class="space-y-space-xs font-body-sm text-body-sm text-on-surface">
+<label class="flex items-center gap-space-sm cursor-pointer">
+<input checked="" class="w-4 h-4 rounded text-primary accent-primary" id="checkSafeBox" type="checkbox">
+<span class="">Đã cất bớt 2.000.000đ tiền mặt vào két an toàn</span>
+</label>
+<label class="flex items-center gap-space-sm cursor-pointer">
+<input checked="" class="w-4 h-4 rounded text-primary accent-primary" id="checkPrinter" type="checkbox">
+<span class="">Máy in bill đã thay cuộn giấy K80 mới</span>
+</label>
+</div>
+</div>
+</div>
+<!-- Final Execution Buttons -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-md border-t-0 bg-surface-container-low/50 -m-space-xl p-space-xl rounded-b-xl mt-space-sm">
+<div class="flex items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">info</span>
+<span class="">Hệ thống tự động đồng bộ doanh thu với ERP máy chủ trung tâm khi xác nhận.</span>
+</div>
+<div class="flex items-center gap-space-md w-full sm:w-auto justify-end">
+<button class="h-12 px-space-lg rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-title-sm text-title-sm transition-all flex items-center gap-space-sm" onclick="saveDraft()" type="button">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span class="">Tạm lưu kiểm quỹ</span>
+</button>
+<button class="h-12 px-space-xl rounded-xl bg-primary-container hover:bg-primary text-surface-container-lowest font-title-sm text-title-sm font-bold shadow-md hover:shadow-lg transition-all flex items-center gap-space-sm" onclick="openConfirmModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span class="">Xác nhận chốt ca làm việc</span>
+</button>
+</div>
+</div>
+</div>
+<!-- POPUP / MODAL: Confirmation Modal (Dialog) -->
+<div class="fixed inset-0 bg-inverse-surface/60 backdrop-blur-sm z-50 hidden items-center justify-center p-space-md transition-opacity" id="confirmModalOverlay">
+<div class="bg-surface-container-lowest max-w-lg w-full rounded-2xl p-space-xl shadow-2xl flex flex-col gap-space-lg relative animate-in fade-in zoom-in-95 duration-150">
+<!-- Modal Header -->
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container text-surface-container-lowest flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Quyết toán thu ngân</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Xác nhận chốt ca sáng · 08/11/2026</h3>
+</div>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-outline transition-colors" onclick="closeConfirmModal()" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Modal Body Recap Box -->
+<div class="bg-surface-container-low p-space-md rounded-xl space-y-2 font-body-md text-body-md text-on-surface">
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">Tổng doanh thu ca:</span>
+<strong class="font-title-sm text-title-sm text-primary">5.480.000 đ</strong>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">Tổng tiền mặt bàn giao:</span>
+<strong class="font-title-sm text-title-sm text-on-surface" id="modalCashSummary">3.350.000 đ</strong>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">Chuyển khoản VietQR đã khớp:</span>
+<strong class="font-title-sm text-title-sm text-secondary">3.130.000 đ</strong>
+</div>
+<div class="flex justify-between items-center pt-2 border-t-0 font-title-sm text-title-sm">
+<span class="text-on-surface">Chênh lệch quỹ:</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-primary font-bold" id="modalDiscrepancy">0 đ (Khớp 100%)</span>
+</div>
+<div class="flex justify-between items-center text-body-sm text-on-surface-variant">
+<span class="">Người nhận ca chiều:</span>
+<span class="font-semibold text-on-surface" id="modalRecipient">Trần Minh Quân</span>
+</div>
+</div>
+<!-- Warning Note -->
+<div class="p-space-md rounded-xl bg-surface-container text-on-surface-variant text-body-sm font-body-sm flex gap-space-sm items-start">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0">warning</span>
+<p class="">
+          Sau khi xác nhận chốt ca, ca làm việc sẽ kết thúc và hệ thống sẽ tự động đăng xuất tài khoản để bàn giao cho ca tiếp theo. Bạn có chắc chắn muốn chốt ca?
+        </p>
+</div>
+<!-- Checkbox Confirmation -->
+<label class="flex items-center gap-space-sm cursor-pointer select-none">
+<input checked="" class="w-5 h-5 rounded text-primary accent-primary" id="sealEnvelopeCheck" type="checkbox">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Đã niêm phong túi tiền nộp két chủ quán</span>
+</label>
+<!-- Modal Actions -->
+<div class="flex items-center justify-end gap-space-md pt-space-xs">
+<button class="h-11 px-space-lg rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-title-sm text-title-sm transition-colors" onclick="closeConfirmModal()" type="button">
+          Kiểm tra lại
+        </button>
+<button class="h-11 px-space-xl rounded-xl bg-primary-container hover:bg-primary text-surface-container-lowest font-title-sm text-title-sm font-bold shadow-md transition-all flex items-center gap-2" onclick="executeFinalHandover()" type="button">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span class="">Đồng ý Chốt ca &amp; Bàn giao</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Notification Toast (Ephemeral) -->
+<div class="fixed bottom-6 right-6 z-50 hidden bg-inverse-surface text-surface px-space-lg py-space-md rounded-xl shadow-xl items-center gap-space-sm animate-bounce" id="toastMessage">
+<span class="material-symbols-outlined text-tertiary-fixed text-[20px]">task_alt</span>
+<span class="font-title-sm text-title-sm font-medium" id="toastText">Đã tạm lưu biên bản kiểm kê sổ quỹ!</span>
+</div>
+</div>
+<script>
+  // Denomination Drawer Toggle
+  function toggleDenominations() {
+    const drawer = document.getElementById('denomDrawer');
+    const label = document.getElementById('denomToggleLabel');
+    if (drawer.classList.contains('hidden')) {
+      drawer.classList.remove('hidden');
+      drawer.classList.add('flex');
+      label.textContent = 'Thu gọn bảng đếm';
+    } else {
+      drawer.classList.add('hidden');
+      drawer.classList.remove('flex');
+      label.textContent = 'Đếm theo mệnh giá';
+    }
+  }
+
+  // Calculate sum from denomination inputs
+  function calculateDenominations() {
+    const inputs = document.querySelectorAll('[data-denom]');
+    let total = 0;
+    inputs.forEach(input => {
+      const denom = parseInt(input.getAttribute('data-denom'), 10) || 0;
+      const count = parseInt(input.value, 10) || 0;
+      total += denom * count;
+    });
+
+    const formatted = formatCurrencyNumber(total);
+    document.getElementById('actualCashInput').value = formatted;
+    updateCashDiscrepancy(total);
+  }
+
+  // Format utility
+  function formatCurrencyNumber(num) {
+    return new Intl.NumberFormat('vi-VN').format(num);
+  }
+
+  function parseCurrencyString(str) {
+    if (!str) return 0;
+    const clean = str.toString().replace(/[^0-9]/g, '');
+    return parseInt(clean, 10) || 0;
+  }
+
+  // Recalculate cash discrepancy when input changes
+  function formatAndRecalculateCash(elem) {
+    const rawVal = parseCurrencyString(elem.value);
+    elem.value = formatCurrencyNumber(rawVal);
+    updateCashDiscrepancy(rawVal);
+  }
+
+  function updateCashDiscrepancy(actualCash) {
+    const expectedCash = 3350000;
+    const diff = actualCash - expectedCash;
+    const diffBox = document.getElementById('cashStatusBox');
+    const diffText = document.getElementById('cashDiffText');
+    const badge = document.getElementById('cashBadge');
+    const icon = document.getElementById('cashStatusIcon');
+
+    if (diff === 0) {
+      diffText.textContent = "0 đ";
+      diffText.className = "font-title-md text-title-md font-bold text-on-surface";
+      badge.textContent = "Khớp quỹ chuẩn 100%";
+      badge.className = "px-3 py-1 rounded-full bg-surface-container-lowest font-label-md text-label-md font-bold text-primary shadow-xs flex items-center gap-1";
+      icon.innerHTML = '<span class="material-symbols-outlined text-[20px]">check_circle</span>';
+      icon.className = "w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary shadow-xs";
+    } else if (diff < 0) {
+      diffText.textContent = formatCurrencyNumber(diff) + " đ (Thiếu hụt)";
+      diffText.className = "font-title-md text-title-md font-bold text-error";
+      badge.textContent = "Cần giải trình lệch quỹ";
+      badge.className = "px-3 py-1 rounded-full bg-error-container font-label-md text-label-md font-bold text-error shadow-xs flex items-center gap-1";
+      icon.innerHTML = '<span class="material-symbols-outlined text-[20px]">error</span>';
+      icon.className = "w-10 h-10 rounded-full bg-error-container flex items-center justify-center text-error shadow-xs";
+    } else {
+      diffText.textContent = "+" + formatCurrencyNumber(diff) + " đ (Dư thừa)";
+      diffText.className = "font-title-md text-title-md font-bold text-tertiary";
+      badge.textContent = "Thừa tiền mặt thực tế";
+      badge.className = "px-3 py-1 rounded-full bg-surface-container-highest font-label-md text-label-md font-bold text-tertiary shadow-xs flex items-center gap-1";
+      icon.innerHTML = '<span class="material-symbols-outlined text-[20px]">help_center</span>';
+      icon.className = "w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-tertiary shadow-xs";
+    }
+  }
+
+  // Simulation helper
+  function setCashSim(val) {
+    document.getElementById('actualCashInput').value = formatCurrencyNumber(val);
+    updateCashDiscrepancy(val);
+  }
+
+  // Bank recalculation
+  function formatAndRecalculateBank(elem) {
+    const rawVal = parseCurrencyString(elem.value);
+    elem.value = formatCurrencyNumber(rawVal);
+    const expected = 3130000;
+    const diff = rawVal - expected;
+    const text = document.getElementById('bankDiffText');
+    if (diff === 0) {
+      text.textContent = "0 đ";
+      text.className = "font-title-md text-title-md font-bold text-on-surface";
+    } else {
+      text.textContent = (diff > 0 ? "+" : "") + formatCurrencyNumber(diff) + " đ";
+      text.className = "font-title-md text-title-md font-bold text-error";
+    }
+  }
+
+  // Modal actions
+  function openConfirmModal() {
+    const cashVal = document.getElementById('actualCashInput').value;
+    const receiverText = document.getElementById('receiverSelect').selectedOptions[0].text;
+    
+    document.getElementById('modalCashSummary').textContent = cashVal + " đ";
+    document.getElementById('modalRecipient').textContent = receiverText.split('(')[0].trim();
+    
+    const diff = parseCurrencyString(cashVal) - 3350000;
+    const modalDisc = document.getElementById('modalDiscrepancy');
+    if (diff === 0) {
+      modalDisc.textContent = "0 đ (Khớp 100%)";
+      modalDisc.className = "px-2 py-0.5 rounded-full bg-surface-container text-primary font-bold";
+    } else {
+      modalDisc.textContent = (diff > 0 ? "+" : "") + formatCurrencyNumber(diff) + " đ";
+      modalDisc.className = "px-2 py-0.5 rounded-full bg-error-container text-error font-bold";
+    }
+
+    const modal = document.getElementById('confirmModalOverlay');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  }
+
+  function closeConfirmModal() {
+    const modal = document.getElementById('confirmModalOverlay');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+  }
+
+  function executeFinalHandover() {
+    closeConfirmModal();
+    showToast("Ca làm việc đã chốt thành công! Đang chuyển giao ca...");
+    setTimeout(() => {
+      // In real scenario, redirect or refresh state
+      location.reload();
+    }, 2000);
+  }
+
+  function saveDraft() {
+    showToast("Đã tạm lưu kết quả kiểm kê quỹ ca sáng!");
+  }
+
+  function showToast(msg) {
+    const toast = document.getElementById('toastMessage');
+    const toastText = document.getElementById('toastText');
+    toastText.textContent = msg;
+    toast.classList.remove('hidden');
+    toast.classList.add('flex');
+    setTimeout(() => {
+      toast.classList.add('hidden');
+      toast.classList.remove('flex');
+    }, 3500);
+  }
+</script></main></div>
+
+<script src="js/config.js"></script><script src="js/api.js"></script><script src="js/nav.js"></script><script src="js/notice.js"></script></body></html>
